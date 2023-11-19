@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 /* ========= importing assets ============ */
 import { Container as ContainerBase
@@ -52,10 +52,9 @@ const CopyrightText = tw.p`text-center font-extrabold tracking-wide text-xs lg:t
 var currPath = "/";
 export default function Footer(props) {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  currPath = window.location.hash;
-  let pathArr = currPath.split("/");
-  pathArr = pathArr.slice(1);
+  let pathArr = location.pathname.split("/").slice(1);
   if(pathArr[0] === "eng"){
     pathArr = pathArr.slice(1);
   }

@@ -8,7 +8,7 @@ import WhyLearnPage from "pages/WhyLearnPage.jsx";
 import ServicesPage from "pages/ServicesPage";
 import ScrollToTop from "helpers/scrollToTop";
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
 

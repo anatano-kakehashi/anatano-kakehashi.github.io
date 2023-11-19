@@ -6,7 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "helpers/useAnimatedNavToggler.js";
 
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 import logo from "assets/ak-images/logo.svg";
 
@@ -65,10 +65,9 @@ var japNav = ["何故プログラミング", "私について", "サービス"];
 export default function Header(props) {
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const navigate = useNavigate();
+  const location = useLocation();
 
-  currPath = (window.location.hash);
-  let pathArr = currPath.split("/");
-  pathArr = pathArr.slice(1);
+  let pathArr = location.pathname.split("/").slice(1);
   let currNavPath = "/";
   let currNavLink = japNav;
   if(pathArr[0] === "eng"){
