@@ -28,9 +28,9 @@ export const home_hero = [
   {
     Heading:(
       <>
-        Unlock The Code to Your Future: 
-        <br />
-        Let’s Learn Programming Together!
+        Unlock The Code<HiddenBr /> to Your Future: <HiddenBr />
+        <HiddenBrSm />
+        Let’s Learn <HiddenBr />Programming Together!
       </>
     ),
     Paragraph:(
@@ -439,7 +439,8 @@ export const aboutMe_TeachHero = [
       "あなたの",
       "メンター",
       " ・ ",
-      "友人だと思ってください。"
+      "友人",
+      "だと思ってください。"
     ],
     Paragraph:"コンピューター・サイエンスをマスターする手助けをするだけでなく、履歴書の書き方や大学進学のためのアドバイスなど、人生の教訓もお伝えします。"
   },
@@ -601,8 +602,8 @@ export const services_Roadmap = [
       SkillsObtained: "Skills You Will Obtain:",
       Skills: [
         "Basics of programming concepts, algorithms, and problem-solving",
-        "Understanding fundamental data structures (e.g., arrays, lists, and loops)",
-        "Introduction to Object Oriented Programming (OOP)"
+        "Understanding fundamental data structures",
+        "Introduction to Object Oriented Programming"
       ]
     },
     {
@@ -617,7 +618,7 @@ export const services_Roadmap = [
       SkillsObtained: "Skills You Will Obtain:",
       Skills: [
         "Basics of Git and Version Control for team collaboration",
-        "Project Management components (how to plan sprints, tasks, and future work)",
+        "Basics of Project Management",
         "Publish/Host a website via Github Pages"
       ]
     },
@@ -633,7 +634,7 @@ export const services_Roadmap = [
       SkillsObtained: "Skills You Will Obtain:",
       Skills: [
         "Basics of HTML / CSS",
-        "Utilizing Python’s Flask framework to build websites",
+        "Utilize Python’s Flask framework to build backend",
         "Create your own portfolio websites and resume",
         "Collaborate with fellow students to create a web project"
       ]

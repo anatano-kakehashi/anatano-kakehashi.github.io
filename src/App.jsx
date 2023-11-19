@@ -6,6 +6,7 @@ import HomePage from "pages/HomePage.jsx";
 import AboutPage from "pages/AboutPage.jsx";
 import WhyLearnPage from "pages/WhyLearnPage.jsx";
 import ServicesPage from "pages/ServicesPage";
+import ScrollToTop from "helpers/scrollToTop";
 
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -15,6 +16,7 @@ export default function App() {
     <>
       <GlobalStyles />
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element = {<HomePage language = "JP"/>} />
           <Route exact path="/eng" element = {<HomePage language = "ENG"/>} />

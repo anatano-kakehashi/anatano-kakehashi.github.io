@@ -40,6 +40,7 @@ export default function WhatTeachHero(props) {
                     <Heading>
                         {currInfo.Heading}
                     </Heading>
+                    {(props.language === "ENG")?
                     <SubHeading>
                         {currInfo.SubHeading[0]}
                         <br />
@@ -53,6 +54,21 @@ export default function WhatTeachHero(props) {
                             {currInfo.SubHeading[4]}
                         </span>
                     </SubHeading>
+                    :
+                    <SubHeading>
+                        {currInfo.SubHeading[0]}
+                        {currInfo.SubHeading[1]}
+                        <span tw="text-main-lightBlue">
+                            {currInfo.SubHeading[2]}
+                        </span>
+                        {currInfo.SubHeading[3]}
+                        <span tw="text-main-yellow">
+                            {currInfo.SubHeading[4]}
+                        </span>
+                        <br tw="sm:hidden"/>
+                        {currInfo.SubHeading[5]}
+                    </SubHeading>
+                    }
                     <Paragraph>
                         {currInfo.Paragraph}
                     </Paragraph>

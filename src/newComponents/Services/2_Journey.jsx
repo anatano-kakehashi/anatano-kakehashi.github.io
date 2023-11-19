@@ -63,7 +63,7 @@ export default function JourneyAbout(props) {
                     shadowSize = 'large'
                     iconStyle={{ background: '#5B8BCB', color: '#FBFBFB' }}
                     icon={<p>01</p>}
-                    tw='pb-4 lg:pb-8 xl:pb-12 pr-8 md:pr-12 lg:pr-16 xl:pr-20'
+                    tw='pb-4 lg:pb-8 xl:pb-12'
                 >
                     <CardMainHeading tw="text-main-lightBlue">
                         {currInfo[0].Heading}
