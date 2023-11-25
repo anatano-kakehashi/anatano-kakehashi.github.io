@@ -19,14 +19,14 @@ const BackgroundContainer = styled(ContainerTemplate)`
 `;
 const Container = styled(ContainerTemplate)`
     ${tw`py-8 px-4 lg:p-8`}
-    background: var(--lighter-blue-NT, #577398);
+    background: var(--lightest-blue-NT, linear-gradient(0deg, rgba(91, 139, 203, 0.15) 0%, rgba(91, 139, 203, 0.15) 100%), #FBFBFB);
 `;
 
 const HeroContainer = tw.div`z-20 relative sm:py-6 md:py-10 lg:py-20 px-4 sm:px-8 mx-auto h-full flex flex-col`;
 
 const Heading = tw(MainSectionHeadingTemplate)`lg:px-8 absolute -top-[55px] sm:-top-[90px] md:-top-[100px] lg:-top-[112px] xl:-top-[124px] text-left text-main-blue tracking-[8px]`;
-const SubHeading = tw(MainHeadingTemplate)`lg:px-8 pt-6 xl:pt-12 relative text-left text-main-white`;
-const Paragraph = tw(MainParagraphTemplate)`lg:px-8 pt-8 pb-12 text-main-black leading-loose text-main-white`;
+const SubHeading = tw(MainHeadingTemplate)`lg:px-8 pt-6 xl:pt-12 relative text-left text-main-blue`;
+const Paragraph = tw(MainParagraphTemplate)`lg:px-8 pt-8 pb-12 text-main-black leading-loose`;
 
 
 var currInfo = services_Hero[0];

@@ -17,13 +17,13 @@ const Container = tw(BaseContainer)`flex flex-col justify-center bg-main-backgro
 
 const MainHeading = tw(MainHeadingTemplate)`text-main-white px-2 py-4 md:p-8 lg:p-12 xl:p-16 relative text-left 4xl:text-center 4xl:mx-auto`;
 
-const Row = tw.div`flex flex-col lg:flex-row justify-between items-center py-4 mx-auto px-4 sm:px-8`;
+const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:py-4 mx-auto px-4 sm:px-8`;
 
 // Image and text columns for the row
 const TextTemplate = tw.div`max-w-3xl md:max-w-4xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl p-6 lg:p-10`;
 
 const ImageColumn_Right = tw.div`relative 
-pb-6 md:pb-8 lg:pb-0
+pt-8 lg:pt-0
 lg:left-[25px] xl:left-[35px]`;
 const TextColumn_Right = tw(TextTemplate)`relative z-20 bg-main-white
 lg:right-[25px] lg:top-[10px]
@@ -46,7 +46,7 @@ const Description = tw(MainParagraphTemplate)`mt-4 text-main-black font-roboto f
 const Image1SizingTemplate = tw.div`m-auto w-[325px] h-[250px] md:w-[550px] md:h-[400px] lg:w-[400px] lg:h-[600px] xl:w-[500px] xl:h-[700px] `;
 const Image1 = styled(Image1SizingTemplate)`
     background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    ${tw`bg-cover bg-center object-center`}
+    ${tw`bg-cover bg-center object-center rounded-t-3xl lg:rounded-none`}
 `;
 const Offsetbackground1 = tw(Image1SizingTemplate)`absolute inset-0 lg:ml-6 lg:mt-6 xl:ml-8 xl:mt-8 bg-main-blue hidden lg:inline`;
 
@@ -55,17 +55,17 @@ const Image2 = styled(Image2SizingTemplate)`
     background-image: url("https://images.unsplash.com/photo-1533850595620-7b1711221751?q=80&w=1545&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     ${tw`bg-cover bg-center object-center`}
 `;
-const MobileImageContainer = tw.div`relative z-10 lg:hidden pb-6 md:pb-8 lg:pb-0`;
+const MobileImageContainer = tw.div`relative z-10 lg:hidden pt-8 lg:pt-0`;
 const MobileImage2 = styled.div`
     background-image: url("https://images.unsplash.com/photo-1533850595620-7b1711221751?q=80&w=1545&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    ${tw`bg-cover bg-center object-center m-auto w-[325px] h-[250px] md:w-[550px] md:h-[400px]`}
+    ${tw`bg-cover bg-center object-center m-auto w-[325px] h-[250px] md:w-[550px] md:h-[400px] rounded-t-3xl lg:rounded-none`}
 `;
 const Offsetbackground2 = tw(Image2SizingTemplate)`absolute inset-0 lg:mr-8 lg:mt-8 xl:mr-8 xl:mt-8 bg-main-yellow hidden lg:inline`;
 
 const Image3SizingTemplate = tw.div`m-auto w-[325px] h-[250px] md:w-[550px] md:h-[400px] lg:w-[400px] lg:h-[460px] xl:w-[500px] xl:h-[580px] `;
 const Image3 = styled(Image3SizingTemplate)`
     background-image: url("https://images.unsplash.com/photo-1557424120-32c81c3d50e3?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    ${tw`bg-cover bg-center object-center`}
+    ${tw`bg-cover bg-center object-center rounded-t-3xl lg:rounded-none`}
 `;
 const Offsetbackground3 = tw(Image3SizingTemplate)`absolute inset-0 lg:ml-6 lg:mt-6 xl:ml-8 xl:mt-8 bg-main-blue hidden lg:inline`;
 
@@ -76,7 +76,7 @@ const Image4 = styled(Image4SizingTemplate)`
 `;
 const MobileImage4 = styled.div`
     background-image: url("https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6f?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    ${tw`bg-cover bg-center object-center m-auto w-[325px] h-[250px] md:w-[550px] md:h-[400px]`}
+    ${tw`bg-cover bg-center object-center m-auto w-[325px] h-[250px] md:w-[550px] md:h-[400px] rounded-t-3xl lg:rounded-none`}
 `;
 const Offsetbackground4 = tw(Image4SizingTemplate)`absolute inset-0 lg:ml-6 lg:mt-6 xl:ml-8 xl:mt-8 bg-main-yellow hidden lg:inline`;
 

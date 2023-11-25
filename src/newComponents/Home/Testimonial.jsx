@@ -91,13 +91,13 @@ const PreviousArrow = ({ currentSlide, slideCount, ...props }) => (
   </SliderControlButtonContainer>
 );
 
-var heading = "私たちの素晴らしいお客様";
+var heading = "寄せられた生徒、保護者の感想";
 var currInfo = testimonials[0];
 var photos = [guy_test1, girl_test1, girl_test2, girl_test3];
 export default function TestimonialComponent(props) {
     if(props.language === "ENG"){
         currInfo = testimonials[1];
-        heading = "Our Awesome Customers";
+        heading = "Testimonials";
     }
   
   return (

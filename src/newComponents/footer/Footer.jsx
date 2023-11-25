@@ -52,9 +52,13 @@ const CopyrightText = tw.p`text-center font-extrabold tracking-wide text-xs lg:t
 var currPath = "/";
 export default function Footer(props) {
   const navigate = useNavigate();
-  const location = useLocation();
 
-  let pathArr = location.pathname.split("/").slice(1);
+  let location = useLocation();
+  currPath = (location.pathname);
+
+  // currPath = window.location.hash;
+  let pathArr = currPath.split("/");
+  pathArr = pathArr.slice(1);
   if(pathArr[0] === "eng"){
     pathArr = pathArr.slice(1);
   }
@@ -111,10 +115,10 @@ export default function Footer(props) {
             </LogoContainer>
             {props.language === "JP" ? tbasNavLinksJap : tbasNavLinksEng}
             <SocialLinksContainer>
-              <SocialLink href="mailto:narimotokoki@gmail.com">
+              <SocialLink href="mailto:anatano.koki@gmail.com">
                 <MailIcon />
               </SocialLink>
-              <SocialLink href="https://youtube.com">
+              <SocialLink href="https://youtube.com" target="_blank">
                 <YoutubeIcon />
               </SocialLink>
               {/* <SocialLink href="https://twitter.com">

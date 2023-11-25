@@ -19,7 +19,7 @@ const Container = tw(ContainerTemplate)`px-4 pt-32 pb-10 lg:px-8 lg:py-32 bg-no-
 const HeroContainer = tw.div`z-20 relative sm:px-8 mx-auto h-full flex flex-col`;
 const Content = tw.div`px-4 flex flex-1 flex-col justify-center items-center`;
 
-const Heading = tw(MainHeadingTemplate)`text-left text-main-blue leading-snug -mt-24 sm:mt-0 lg:tracking-[3.6px]`;
+const Heading = tw(MainHeadingTemplate)`text-center text-main-blue leading-snug -mt-24 sm:mt-0 lg:tracking-[3.6px]`;
 const SubHeading = tw(MainHeading2Template)`text-left text-main-lightBlue leading-snug mt-6 lg:mt-10 lg:tracking-[2.6px]`;
 const Paragraph = tw(MainParagraphTemplate)`px-4 lg:px-8 my-4 lg:my-8 leading-loose`;
 

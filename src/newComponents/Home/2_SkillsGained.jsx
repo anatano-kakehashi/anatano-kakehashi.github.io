@@ -5,6 +5,7 @@ import {css} from "styled-components/macro"; //eslint-disable-line
 
 /* ========= importing assets ============ */
 import {MainHeading2 as HeadingTitleTemplate, 
+    MainParagraph as MainParagraphTemplate,
     Container as ContainerTemplate
   } from "assets/styles/TailwindComponents.jsx";
 import NumIcon from "assets/styles/NumIcon.jsx";
@@ -38,7 +39,7 @@ const Image = styled.div(props => [
 const Details = tw.div`rounded rounded-t-none flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
 
 const Title = tw.h5`mt-4 leading-snug font-openSans text-main-blue font-semibold text-lg md:text-xl lg:text-2xl xl:text-3xl text-center`;
-const Description = tw.p`lg:px-6 pt-2 pb-6 mt-2 font-roboto text-sm md:text-base lg:text-lg xl:text-xl font-light text-main-black text-left`;
+const Description = tw(MainParagraphTemplate)`lg:px-6 pt-2 pb-6 mt-2 font-roboto font-light text-main-black text-left`;
 
 var currInfo = home_skills[0];
 export default function skillsGained(props) {

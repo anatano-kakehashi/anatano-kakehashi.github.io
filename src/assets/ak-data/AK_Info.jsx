@@ -20,7 +20,7 @@ export const home_hero = [
     ),
     Paragraph:(
         <>
-          あなたの頼れる先輩プログラマーとして、皆さんにコンピューターサイエンスを教え、サポートする事に全力を注いでいます。また、プログラミング以外の大学・社会に関するアドバイス、なども生徒達に教えます。私と一緒に学び、成長し、プログラミングを楽しむ旅をあなたも始めましょう！
+          あなたの頼れる先輩プログラマーとして、皆にコンピューターサイエンスを教え、サポートする事に全力を注いでいます。また、プログラミング以外の大学・社会に関する事などもアドバイスします。私と一緒に学び、成長し、プログラミングを楽しむ旅をあなたも始めましょう！
         </>
     ),
     PrimaryAction:"初回無料レッスンを受けよう！"
@@ -35,10 +35,10 @@ export const home_hero = [
     ),
     Paragraph:(
       <>
-        As your go-to coding buddy and attentive mentor, I’m all about helping students not only conquer computer science, but also with supporting their journey navigating through academia and industry. Get ready for a journey of learning, growing, and having a blast together!
+        As your go-to coding buddy and attentive mentor, I'm all about helping students understand computer science and supporting their journey navigating through both academia and industry. Get ready for a journey of learning, growing, and having a blast together!
       </>
   ),
-    PrimaryAction:"Schedule a Free Lesson"
+    PrimaryAction:"Schedule a Free Lesson!"
   }
 ];
 
@@ -58,7 +58,7 @@ export const home_skills = [
       },
       {
         Heading:"最新の技術を理解する",
-        Paragraph:"現在、AIの進歩で世界は劇的に変化しています。AIを利用して解析・翻訳ができ、自動運転を可能にする最新の技術：ですが大数の人々はAIが何なのかを良く分かってません。こんなにも世界を劇的に変化している最新の技術と常に触れ合い、どの様に作られていて、裏で何が起こっているかを理解している職業こそエンジニアなのです。",
+        Paragraph:"現在、AIの進歩で世界は劇的に変化しています。AIを利用して解析・翻訳ができ、自動運転をも可能にする最新の技術ですが、大多数の人々はAIが何なのかを良く分かってません。こんなにも世界を劇的に変化させている最新の技術と常に触れ合い、どの様に作られ裏で何が起こっているかを理解している職業こそエンジニアなのです。",
         ImageUrl: skill3
       },
       {
@@ -69,26 +69,26 @@ export const home_skills = [
     ]
   },
   {
-    Heading:(<>What You Will Gain</>),
+    Heading:(<>Skills You Will Gain</>),
     Skills:[
       {
         Heading:"Unleash your Creativity",
-        Paragraph:"While coding involves logic, it also allows for creative problem-solving. Programmers often find innovative ways to approach issues and create unique solutions, fostering creativity and to think outside the box.",
+        Paragraph:"While coding involves logical thinking skills, it also teaches programmers how to think creatively. Programmers often find innovative ways to approach issues and create unique solutions, fostering creativity and to think outside the box.",
         ImageUrl: skill1
       },
       {
         Heading:"Develop your Technical Skills",
-        Paragraph:"By breaking down complex problems, thinking logically, and finding creative and efficient solutions, programmers develop their technical skills on an everyday basis. These extremely valuable skills will assist you with tackling various challenges in all aspects of life: outside of programming as well.",
+        Paragraph:"By breaking down complex problems, thinking logically, and finding efficient solutions, programmers develop their technical skills on an everyday basis. These technical skills will help you tackle various challenges in all aspects of life.",
         ImageUrl: skill2
       },
       {
         Heading:"Understand Emerging Tech",
-        Paragraph:"As a programmer, you will use and interact with thousands of hardware and software concepts on a daily basis. This will provide you with a holistic understanding of how technology works: even the latest cutting-edge technology. This understanding demystifies the technology-driven world we live in, empowering you to make informed decisions about the technology you use. ",
+        Paragraph:"As a programmer, you will interact with thousands of hardware and software concepts on a daily basis. This will provide you with a holistic understanding of how technology works: even the latest cutting-edge technology. This understanding demystifies the technology-driven world we live in, empowering you to make informed decisions about the technology you use. ",
         ImageUrl: skill3
       },
       {
         Heading:"Become Prepared for Industry",
-        Paragraph:"Programming equips you with practical skills that are highly sought after in various industries. As technology continues to advance, professionals with programming knowledge will continue to increase in demand. Whether you're pursuing a career in tech or another field, programming skills make you more adaptable and valuable in the job market, increasing your readiness for a wide range of industries.",
+        Paragraph:"Programming equips you with practical skills that are highly sought after in various industries. As technology continues to advance, professionals with programming skills will continue to increase in demand. Whether you're pursuing a career in tech or another field, programming will make you more adaptable and valuable in the job market, increasing your readiness for a wide range of industries.",
         ImageUrl: skill4
       }
     ]
@@ -114,12 +114,16 @@ export const startJourneyInfo = [
   {
     Heading: "旅に出よう",
     Description1: "もしあなたがコンピューターサイエンスに対して怖気づいたり、まだ学ぶには早いと感じたりしているなら、心配しないで下さい！私も５年前は素人でしたが、今ではエンジニアとして働いています。あなたの旅は始まったばかりで、きっと素晴らしいものになるでしょう！",
-    Description2: "初回のレッスンは無料なので、気軽にメッセージをください！",
+    Description2: (
+      <>
+        初回のレッスンは無料なので、<HiddenBr />気軽にメッセージをください！
+      </>
+    ),
     Button: "初回無料レッスンを受けよう！"
   },
   {
     Heading: "Start Your Journey",
-    Description1: "If you're feeling intimidated by Computer Science or feel like you aren’t prepared to learn, just remember, I started from scratch too, and look where I am now. Your journey is just beginning, and it's going to be a fantastic ride!",
+    Description1: "If you're feeling intimidated by Computer Science or feel like you aren't prepared to learn, just remember, I started from scratch too, and look where I am now. Your journey is just beginning, and it's going to be a fantastic ride!",
     Description2: "The first lesson will be free, so feel free to message me casually!",
     Button: "Schedule a Free Lesson"
   }
@@ -138,11 +142,9 @@ export const testimonials = [
         "初心者からでしたが丁寧に個人レッスンをして頂きありがたかったです。更にグループレッスンをしたりと意見を良い合えたり他の人の良い所悪い所を良い合えたりインプットとアウトプットが出来た事はかなり良かったのではないかと思います。",
         stars: 5,
       customerTitle: (<>
-        生徒B
+        生徒Bの
         <HiddenBr />
-        の親御
-        <HiddenBr />
-        さん
+        親御さん
       </>)
     },
     {
@@ -150,11 +152,9 @@ export const testimonials = [
         "いつも子供が喜んで授業に参加している姿を目の当たりにしています。全てに満足して、感謝しています。",
       stars: 5,
       customerTitle: (<>
-        生徒C
+        生徒Cの
         <HiddenBr />
-        の親御
-        <HiddenBr />
-        さん
+        親御さん
       </>)
     }
   ],
@@ -184,14 +184,23 @@ export const testimonials = [
 
 export const whyCS_WhatIsCS = [
   {
-    Heading:"学ぶメリット？",
-    SubHeading:"コンピューターサイエンスとは？",
-    Paragraph:"コンピューターサイエンスとは、コンピューターに関しての知識を学ぶだけではなく、私たちを日々取り巻くテクノロジーを理解することです。私たちの電子機器やアプリを動かしているテクノロジーの舞台裏を覗き見ることができる超能力を持っているようなものです。想像してみてほしい。あなたが今このメッセージを読むために使っている電話やこのウェブサイトを構築したプログラムはすべてコンピューターサイエンスの世界で生まれました。"
+    Heading:"学ぶメリット",
+    SubHeading:(
+      <>
+        コンピューター<HiddenBr/>
+        サイエンスとは？
+      </>
+    ),
+    Paragraph:"コンピューターサイエンスとは、コンピューターに関しての知識を学ぶだけではなく、私たちを日々取り巻くテクノロジーを理解することです。私たちの電子機器やアプリを動かしているテクノロジーの舞台裏を覗き見ることができる超能力を持っているようなものです。想像してみてほしい：あなたが今このメッセージを読むために使っている電話やこのウェブサイトを構築したプログラムはすべてコンピューターサイエンスの世界で生まれました。"
   },
   {
-    Heading:"WHY LEARN?",
-    SubHeading:"What is Computer Science?",
-    Paragraph:"Computer Science is not just about computers; it's about understanding the digital world that surrounds us. It's like having a superpower that lets you peek behind the scenes of technology. Imagine this: the smartphone you use to search the web or call your loved ones, the car you drive everyday for school, or the computer you use to complete homework assignments were all created by Computer Science. By understanding Computer Science, you will become aware of the technology surrounding our daily lives and understand how they were programmed/created!"
+    Heading:"WHY LEARN",
+    SubHeading: (
+      <>
+        What is Computer Science?
+      </>
+    ),
+    Paragraph:"Computer Science is not just about computers; it's about understanding the digital world that surrounds us. It's like having a superpower that lets you peek behind the scenes of technology. Imagine this: the smartphone you use to search the web & call your loved ones, the cars we all drive in everyday, or the computer you use to complete homework assignments were all created by Computer Science. By understanding Computer Science, you will become aware of the technology surrounding our daily lives and understand how they were programmed/created!"
   }
 ];
 
@@ -199,29 +208,29 @@ export const whyCS_WhyImp = [
   {
     Heading:(
       <>
-        何故重要なのか？
+        何故重要なの？
       </>
     ),
     Paragraph:(
       <>
         数十年後、世界はテクノロジーの進歩で劇的に変化するでしょう。自動運転する車、AIが病気を治したり手術を行い、完全に没入できるバーチャルリアリティ。これらはSFの夢ではなく、コンピューターサイエンスのおかげで現実になりつつあります。
         <br />
-        コンピューターサイエンスを学ぶことで、私たちの生活を取り巻く新たなソフトウェアに精通することができ、他の誰よりも一歩先を行くことができる。例えば、AIが怖くて馴染みのない概念ではなくなり、AIがどのように作られるのか、そしてどのように我々がAIを活用するかを理解することができます！
+        コンピューターサイエンスを学ぶことで、私たちの生活を取り巻く新たなソフトウェアに精通することができ、他の誰よりも一歩先を行くことができます。例えば、AIが怖くて馴染みのない概念ではなくなり、AIがどのように作られるのか、そしてどのように我々がAIを活用するかを理解することができます！
       </>
     )
   },
   {
     Heading:(
       <>
-        Why is it <HiddenBrLgXl />
+        Why is it <HiddenBrMd />
         Important?
       </>
     ),
     Paragraph:(
       <>
-        Now, let's fast forward a bit. In the next couple of decades, you'll see some incredible things happening in technology. Picture this: cars that drive themselves, AI that cures diseases and performs surgeries, and virtual reality environments where you can be fully immersed. These are not just sci-fi dreams; they're coming to fruition because of Computer Science. 
+        Now, let's fast forward a bit. In the next couple of decades, you'll see some incredible things happen in technology. Picture this: cars that drive themselves, AI that cures diseases & performs surgeries, and virtual reality environments where you can be fully immersed. These are not just sci-fi dreams; they're coming to fruition thanks to Computer Science. 
         <br />
-        By learning computer science, you will become familiar with these technological concepts and the emerging software that surrounds our lives; thus, being a step ahead of everyone else. For instance, AI won’t be a scary / unfamiliar concept anymore. Instead you will understand how AI is created and how YOU can take control and utilize AI to your advantage! 
+        By learning computer science, you will become familiar with these technological concepts and the emerging software that surrounds our lives; thus, being a step ahead of everyone else. For instance, AI won't be a scary / unfamiliar concept anymore. Instead you will understand how AI is created and how YOU can take control and utilize AI to your advantage! 
       </>
     )
   }
@@ -229,8 +238,8 @@ export const whyCS_WhyImp = [
 
 export const whyCS_ThreeReasonings = [
   {
-    Heading: "学ぶ事で何が得られるんですか？",
-    SubHeading1 : "技術スキルの高い需要／多様なキャリアの機会：",
+    Heading: (<>コンピューターサイエンスを<br />学ぶ事で何が得られますか？</>),
+    SubHeading1 : (<>技術スキルの高い需要／<br/>多様なキャリアの機会：</>),
     Paragraph1: (
       <>
         上記のセクションで述べたように、コンピューターサイエンスはあらゆるところに存在しており、今後も私たちの生活に影響を与え続けるだろう。この重要性に伴い、プログラマーも極めて需要になっています！実際、米国労働統計局によると、ソフトウェアエンジニアの仕事は他のどの分野よりも速く成長するという。
@@ -238,7 +247,7 @@ export const whyCS_ThreeReasonings = [
         もう一つの重要な点は、コンピューターサイエンスには様々なサブフィールドがあるということです。ゲーム開発、UI/UX（デザインと研究）、サイバーセキュリティ、データサイエンス、iOS/Androidアプリ開発など、数え上げればきりがない！
       </>
     ),
-    SubHeading2: "ワーク・ライフ・バランスと有利な福利厚生",
+    SubHeading2: (<>ワーク・ライフ・バランス<br/>と有利な福利厚生：</>),
     Paragraph2: (
       <>
         最後に、ソフトウェアエンジニアは、高給、良い保険、素晴らしいオフィス設備など、非常に有利な福利厚生があります。一例として、平均的な新卒のソフトウェアエンジニアの年収は約10万ドルです。これとは対照的に、大学を卒業し、就職活動に苦労する専攻は山ほどある。就職できたとしても、新卒の平均給与は5万ドルです。
@@ -246,13 +255,13 @@ export const whyCS_ThreeReasonings = [
         もちろん、お金がすべてではありませんが、高収入のお陰で早くに引退したり、いつも行きたかった旅行、学びたかった新しい言語など、様々な機会の扉を開くことができます。
       </>
     ),
-    SubHeading3: "最新テクノロジーが理解出来る",
+    SubHeading3: "最新テクノロジーが理解出来る：",
     Paragraph3: (
       <>
         今日の世界では、テクノロジーのノウハウをある程度、話さなければならない。SNSで「いいね！」をクリックし、投稿をシェアしているところを想像してみてほしい。その裏で何が起こっているのか、不思議に思ったことはないだろうか？SNSは、あなたが何を好み、どこに行き、どのように見えるかまで、あなたに関する大量のデータを収集している！ちょっと不気味だ。しかし、コンピューターサイエンスを理解していれば、これらのプラットフォームをただ利用するだけでなく、どのように機能しているのかを知ることができる。あなたがコントロールするのであって、彼らがコントロールするのではない。
       </>
     ),
-    SubHeading4: "創造力が強くなる",
+    SubHeading4: "創造力が強くなる：",
     Paragraph4: (
       <>
         コンピューターサイエンスは単なる数字やコードではありません。クリエイティブな遊び場なのです。自分のビデオゲームをデザインしたり、見事なデジタルアートを作ったり、現実世界の問題を最新のAI技術で解決したいと思ったことはありませんか？コンピューターサイエンスでは、そのようなことがすべてできます。コンピューターサイエンスは、あなたの想像力のためのツールキットを持つようなものです。
@@ -273,12 +282,12 @@ export const whyCS_ThreeReasonings = [
         Another important aspect is that there are various subfields within Computer Science. You can dive into Game Development, UI/UX (Design & Research), Cyber Security, Data Science, iOS/Android app dev, and the list goes on! 
       </>
     ),
-    SubHeading2: "Work / Life Balance & Lucrative Benefits: ",
+    SubHeading2: (<>Work / Life Balance & <br/>Lucrative Benefits:</>),
     Paragraph2: (
       <>
-        As you may have expected, in relation to the high demand and diverse career options, software engineers also have extremely lucrative benefits: high salary, wonderful healthcare, amazing office amenities, to name a few. To put things in perspective, the average entry-level software engineer makes ~$108,000 a year in the United States. 
+        As you may have expected, in relation to the high demand and diverse career options, software engineers also have extremely lucrative benefits: high salary, wonderful healthcare, amazing office amenities, to name a few. To put things in perspective, the average entry-level software engineer makes ~$120,000 a year in the United States. 
         <br />
-        In contrast to this, there are tons of other majors where students graduate from a 4-year university, but struggle to find a job. And even when they do find one, the average new-grad’s salary is $50,000. Of course money isn't everything, but it can open doors to opportunities that you’ve always wanted to do like traveling or learning a new language. 
+        In contrast to this, there are tons of other majors where students graduate from a 4-year university, but struggle to find a job. And even when they do find one, the average new-grad’s salary is $60,000. Of course money isn't everything, but it can open doors to opportunities that you’ve always wanted to do like traveling or learning a new language. 
       </>
     ),
     SubHeading3: "Understand the Digital World: ",
@@ -300,10 +309,11 @@ export const whyCS_WhyDive = [
   {
     Heading:(
       <>
-        なぜコンピューターサイエンスを<HiddenBrLgXl />学ぶべきなのでしょうか？
+        では、私はなぜ<HiddenBr/>
+        コンピューター<HiddenBrLgXl/>サイエンスを学ぶべきなのでしょうか？
       </>
     ),
-    SubHeading1:"それは簡単です：",
+    SubHeading1:"それは：",
     SubHeading2:"あなたが学びたいから！",
     Paragraph:(
         <>
@@ -314,7 +324,7 @@ export const whyCS_WhyDive = [
   {
     Heading:(
       <>
-        So Why Should I Dive into the <HiddenBrLgXl /> World of Computer Science?
+        So why should I dive into <HiddenBrLgXl />Computer Science?
       </>
     ),
     SubHeading1:"It's simple: ",
@@ -332,7 +342,7 @@ export const whyCS_WhyDive = [
 export const aboutMe_IntroHero = [
   {
     Heading:"私について",
-    SubHeading:(<>未来のプログラマーの皆さん、<HiddenBrLgXl />こんにちは！ 👋</>),
+    SubHeading:(<>未来のプログラマーの<HiddenBrLg />皆さん、<HiddenBr/><HiddenBrXl />こんにちは！ 👋</>),
     Paragraph:[
       "コンピューター","サイエンス",
       "の素晴らしさを教える、",
@@ -354,48 +364,48 @@ export const aboutMe_IntroHero = [
 
 export const aboutMe_JourneyHero = [
   {
-    Heading:"私の経路",
-    Paragraph:"現在マイクロソフトでソフトウェア・エンジニアとして働いていますが、ほんの5年前、君みたく、私はコンピューターサイエンスが何なのかを全く知りませんでした。そんなゼロからのスタートでしたが、今となっては色んな経験を積み学ぶ事が出来ました。",
+    Heading:"私の経歴",
+    Paragraph:"現在マイクロソフトでソフトウェア・エンジニアとして働いていますが、ほんの5年前まで私はコンピューターサイエンスが何なのかを全く知りませんでした。そんなゼロからのスタートでしたが、色んな経験を積み学ぶ事が出来ました。",
     Description1: "様々な授業、インターンシップ、プロジェクトを通じて、ウェブサイトの作り方やAI/MLの学習方法など、素晴らしい技術を学んで来ました。加えて、私はプログラミング以外の重要なライフスキルも学びました：チームワーク、コミュニケーション、問題解決、など。これまで経験した事、これから学ぶ事を全部取り入れて君に最高の授業を提供して行きたいです。",
     Description2: "だから、もしあなたがコンピューターサイエンスを怖いと感じたり、学ぶ準備が出来てないと感じたりしているなら、ただ思い出してほしい：私もたった5年前はあなたと同じく怖く感じてました。あなたの旅はまだ始まったばかりで、私はあなたの事を全力でサポートします。絶対楽しい未来が待っているよ！",
     Journey:[
       {
         SubHeading: "UC Santa Barbara",
         Date: "２０１８秋",
-        Description: "コンピューターサイエンスの経験がないままUCSBに入学"
+        Description: (<>コンピューターサイエンスの<br />経験がないままUCSBに入学</>),
       },
       {
         SubHeading: "Japan",
         Date: "２０１９夏",
-        Description: "日本でインターンシップと留学"
+        Description: "日本でインターンと留学経験"
       },
       {
         SubHeading: "Northrop Grumman",
         Date: (<>２０２０夏＆<br /> ２０２１春・夏</>),
-        Description: (<>Northrop GrummanでSWE & AI/MLインターン</>)
+        Description: (<>Northrop Grummanで<br/>SWE & AI/MLインターン</>)
       },
       {
         SubHeading: "Invoca",
         Date: "２０２１秋",
-        Description: "Invoca CS Capstoneのチームリーダー"
+        Description: (<>Invoca CS Capstoneの<HiddenBrLgXl />チームリーダー<br/>UCSB CS Summitで3位入賞</>)
       },
       {
         SubHeading: "UCSB Game Development",
         Date: "２０２２春",
-        Description: "RPGビデオゲームを開発、UCSB CSフェアでトップ5に入賞"
+        Description: (<>RPGビデオゲームを開発、<br/>UCSB CS Fairでトップ5入賞</>)
       },
       {
         SubHeading: "Microsoft",
         Date: "２０２２秋",
-        Description: "マイクロソフトでソフトウェアエンジニア"
+        Description: (<>Microsoft Azureで<br/>ソフトウェアエンジニア</>)
       }
     ]
   },
   {
     Heading:"My Journey",
     Paragraph:"I'm working as a Software Engineer at Microsoft right now (pretty wild, huh?), but just five years ago, I was in your shoes, not knowing a thing about Computer Science. I started from scratch, and it's been an amazing adventure. Below, you can see some of my relevant experiences I have in the realm of Computer Science.",
-    Description1: "I learned some amazing technical skills like how to create a website or how to train an AI/ML model through various projects, coursework, and industry experience. Throughout this journey, though, I also learned important life skills that helped me get where I am today. Life's not just about coding, right? It's also about things like teamwork, communication, and problem-solving, and I've got some great stories to share about that.",
-    Description2: "So, if you're feeling intimidated by Computer Science or feel like you aren’t prepared to learn, just remember, I started from scratch too, and look where I am now. Your journey is just beginning, and it's going to be a fantastic ride!",
+    Description1: "I learned some amazing technical skills like how to create a website or how to train an AI/ML model through various projects, coursework, and industry experience. Throughout this journey, though, I also learned important life skills that helped me get to where I am today. Life's not just about coding, right? It's also about things like teamwork, communication, and problem-solving, and I've got some great stories to share about that as well.",
+    Description2: "So, if you're feeling intimidated by Computer Science or feel like you aren't prepared to learn, don't worry. Remember that I started from scratch too and look where I am now. Your journey is just beginning, and it's going to be a fantastic ride!",
     Journey:[
       {
         SubHeading: "UC Santa Barbara",
@@ -415,17 +425,17 @@ export const aboutMe_JourneyHero = [
       {
         SubHeading: "Invoca",
         Date: "2021 Fall",
-        Description: "Team-Lead for Invoca CS Capstone project where we created a call summarization web application"
+        Description: (<>Team Lead for the Invoca <br />CS Capstone project <br/> placing 3rd at the UCSB CS Summit</>)
       },
       {
         SubHeading: "UCSB Game Development",
         Date: "2022 March",
-        Description: "Developed an RPG Video Game, placing top 5 at the UCSB CS Fair"
+        Description: (<>Developed an RPG Video Game, <br />placing top 5 at the UCSB CS Fair</>)
       },
       {
         SubHeading: "Microsoft",
         Date: "2022 Fall",
-        Description: "Software Engineer at Microsoft working on Azure (Cloud services)"
+        Description: "Software Engineer at Microsoft Azure"
       }
     ]
   }
@@ -442,7 +452,7 @@ export const aboutMe_TeachHero = [
       "友人",
       "だと思ってください。"
     ],
-    Paragraph:"コンピューター・サイエンスをマスターする手助けをするだけでなく、履歴書の書き方や大学進学のためのアドバイスなど、人生の教訓もお伝えします。"
+    Paragraph:"コンピューターサイエンスをマスターする手助けをするだけでなく、履歴書の書き方や大学進学のためのアドバイスなど、人生の教訓もお伝えします。"
   },
   {
     Heading:"What I'll Teach You",
@@ -453,7 +463,7 @@ export const aboutMe_TeachHero = [
       " and ",
       "friend."
     ],
-    Paragraph:"I'll not only help you master Computer Science but also share life lessons like how to create a killer resume or give you valuable advice for college and beyond."
+    Paragraph:"I'll not only help you master Computer Science but also share life lessons like how to create a resume or give you valuable advice for college and beyond."
   }
 ];
 
@@ -463,12 +473,17 @@ export const aboutMe_WhyMeHero = [
     SubHeading1:"共感できるエンジニア",
     Paragraph1:(
     <>
-      大学受験のとき、私は気まぐれで「コンピューター・エンジニアリング」を専攻として選日ました。なのでUCSBに入学したとき、僕にはプログラミングの経験が全く無かった。他の生徒も同じような境遇だと思っていましたが、ほとんどの生徒は既にプログラミングを学んでいました。なぜ皆はこんなにも多くのことを知っているのだろう？答えは意外と簡単で、彼らには助けを求める人々がいたからだ。これとは対照的に、この分野を探求したのは家族で私が初めてだったし、私には導いてくれる人が居ませんでした。だからこそ、私はあなたの家庭教師になりたいのです。あなたがいつでも頼れる、何でも聞けるメンターでありたいのです。そして一緒に、あなたが素晴らしいソフトウェア・エンジニアになるための勉強に励みましょう。
+      大学受験のとき、私は気まぐれで「コンピューター・エンジニア」を専攻として選びました。理系の授業は得意でしたし、コンピューターは将来役に立つだろうと言う甘い考えでUCSBに入学しました。その当時、僕にはプログラミングの経験が全く無かったのですが、他の生徒もきっと同じだろうと思ってました。
+      <br/><br/>
+      しかし、僕とは対照的にほとんどの生徒が既にプログラミングを学んでいて、将来エンジニアになりたいと言う強い思いを抱いていました。なぜ皆はこんなにも多くのことを知っているのだろう？なぜ皆はエンジニアを目指そうと思ったのだろう？その答えは意外と簡単で、彼らにはアドバイスを貰える人々が身近にいたからでした。自分の家族だったり友達の両親など既にエンジニアになっている人々を知っていました。だからこそエンジニアは何をしていて、どうしたら彼らもエンジニアになれるかを知っていたからです。
+      <br/><br/>
+      私の親族内ではこの分野を探求したのは自分が初めてだったので、私には導いてくれる人が周りに居ませんでした。だからこそ、私はあなたの力になりたいのです。あなたがいつでも頼れる、何でも聞けるメンターとなり一緒に励み、あなたが素晴らしいソフトウェア・エンジニアになる手助けが出来ればと願っています。
     </>),
     SubHeading2:"熱心なサポーター",
     Paragraph2:(
       <>
-        日系一世として、私はアメリカで成長して行く中、多くの葛藤や障害に直面し、圧倒されそうになることがよくありました。そのような時期に、ある素晴らしい英語チューターと出会い、私の状況は完全に好転しました。彼の思いやりと多大なサポートによって、英語を楽しく学ぶ事ができるようになりました。彼のおかげで、学校での成績が良くなっただけでなく、アメリカ人の素晴らしい友達もできました。この経験以来、私は教えること、そして生徒の人生に良い影響を与えることを心掛けています。私が学んだことを分かち合い、皆さんの成功の手助けをしたいです！
+        日系一世として、私はアメリカで成長して行く中、多くの葛藤や障害に直面し、圧倒されそうになることがよくありました。そのような時期に、ある素晴らしい英語チューターと出会い、私の状況は完全に好転しました。彼の思いやりと多大なサポートによって、英語を楽しく学ぶ事ができるようになりました。<br/><br/>
+        彼のおかげで、学校での成績が良くなっただけでなく、色んな文化にも触れて、素晴らしい友達もできました。この経験以来、私は教えること、そして生徒の人生に良い影響を与えることを心掛けています。私が学んだことを分かち合い、皆さんの成功の手助けをしたいです！
       </>)
   },
   {
@@ -516,7 +531,10 @@ export const services_Hero = [
   {
     Heading:"サービス内容",
     SubHeading1: "こんにちは！ ",
-    SubHeading2:"あなたの架け橋のプログラミング授業で期待できることを簡単に紹介します！",
+    SubHeading2:(
+    <>
+      あなたの架け橋の<HiddenBr />プログラミング授業で期待<HiddenBr />できることを簡単に紹介します！
+    </>),
     Paragraph:(
       <>
         これからプログラミングを始める方も、すでにプログラミングの経験がある方もご安心ください。このロードマップは、単にコース進行のフレームワークとして機能します。
@@ -543,16 +561,25 @@ export const services_Roadmap = [
       Heading: "Python 入門",
       SubHeading1: "推定時間：",
       SubHeading2: "週1回受講の場合、〜1年",
-      Paragraph: "Pythonは初心者に優しいプログラミング言語でありながら、非常に汎用性が高い。実際、世界中のプログラマーの50％がPythonを利用しています。",
+      Paragraph: (
+      <>
+        Pythonは初心者に優しいプログラミング言語でありながら、<HiddenBrLgXl/>非常に汎用性が高い。<HiddenBr/>実際、世界中のプログラマーの50％がPythonを<HiddenBr/>利用しています。
+      </>),
       WhatTeach: "何を教えるか：",
       WhatTeachParagraph: "Pythonはそのシンプルさと読みやすさで知られる初心者に優しいプログラミング言語なので、Pythonを通してプログラミングの基本的な概念をすべてカバーします。これを通して、将来ウェブ開発やゲーム開発など様々なコンセプトを学ぶための基礎を固めます。",      
       WhyImportant: "なぜ重要なのか：",
       WhyImportantParagraph: "Pythonは、幅広い用途に適した非常に汎用性の高いプログラミング言語です。今日、PythonはWeb開発、データ分析、AI/ML など様々な分野で利用されています。さらに、世界中のプログラマーのほぼ50％がPythonを業務に活用しています。したがって、Pythonを学ぶことは、ソフトウェア・エンジニアのキャリアにおいて間違いなく役立ちます。",
       SkillsObtained: "身につくスキル：",
       Skills: [
-        "プログラミングの基礎、アルゴリズム",
+        (<>
+          プログラミング /<br/>
+          アルゴリズムの基礎
+        </>),
         "基本的なデータ構造の理解",
-        "オブジェクト指向プログラミング"
+        (<>
+          オブジェクト指向<br/>
+          プログラミング
+        </>)
       ]
     },
     {
@@ -566,13 +593,13 @@ export const services_Roadmap = [
       WhyImportantParagraph: "GitHubを利用する事で複数のプログラマーが、衝突することなく同時に同じプロジェクトに取り組むことができます。それはまるで、クラスのプロジェクトで友達と同じ google ドキュメントで作業するようなものです。また、GitHubでチームの課題を効率的に管理し、優先順位をつけることもできます。これにより、プロジェクトを整理し、重要な問題を確実に対処することができます。多くの企業、特にTech業界では、コードの管理にGitHubを使っています。実際、Fortune 100企業の90%以上がGitHubを使っているため、GitHubの効果的な使い方を知っていることは、ソフトウェア開発の仕事を探す上で貴重なスキルです。",
       SkillsObtained: "身につくスキル：",
       Skills: [
-        "チーム・コラボレーションのためのGitとバージョン管理の基本",
-        "プロジェクト管理の構成要素",
-        "Githubページでウェブサイトを公開"
+        (<>チーム・コラボレーション用の<HiddenBr/>Gitとバージョン<HiddenBrLgXl />管理の基礎</>),
+        (<>プロジェクト管理の基礎</>),
+        (<>Githubページで<br />ウェブサイトを公開</>)
       ]
     },
     {
-      Heading: "Web開発　入門",
+      Heading: "Web開発 入門",
       SubHeading1: "推定時間：",
       SubHeading2: "週1回受講の場合、〜1年",
       Paragraph: "Web開発は、技術業界で最も需要の高いスキルの1つです。なぜなら、そのスキルはプログラマーに様々なプロジェクトに適用できる汎用性の高いスキルセットを備えているからです。",
@@ -582,10 +609,10 @@ export const services_Roadmap = [
       WhyImportantParagraph: "ソフトウェア・エンジニアになるには、ウェブ開発のスキルが非常に役に立ちます。特にフルスタック（フロントエンド、バックエンド、データベース、api）を理解することは、あらゆるエンジニア職に役立ちます。もう一つの極めて重要な要素は、プログラマーが自分のオンラインビジネスを作ったり、フリーランスのエンジニアとして様々なプロジェクトに携わったりできることです。",
       SkillsObtained: "身につくスキル：",
       Skills: [
-        "HTML/CSSの基礎",
-        "PythonのFlaskフレームワークを使ってウェブサイトを構築",
-        "自分のポートフォリオウェブサイトと履歴書を作成する",
-        "仲間と協力してウェブ・プロジェクトを作成する"
+        (<>HTML/CSS<HiddenBr/>の基礎</>),
+        (<>Python Flaskを使って<HiddenBr/>ウェブサイトを構築</>),
+        (<>自分のポートフォリオ<HiddenBr/>ウェブサイトと<HiddenBrLgXl/>履歴書を<HiddenBr/>作成する</>),
+        (<>仲間と協力してウェブ・<HiddenBr/>プロジェクト<HiddenBrLgXl/>を作成する</>)
       ]
     }
   ] ,
@@ -602,24 +629,24 @@ export const services_Roadmap = [
       SkillsObtained: "Skills You Will Obtain:",
       Skills: [
         "Basics of programming concepts, algorithms, and problem-solving",
-        "Understanding fundamental data structures",
-        "Introduction to Object Oriented Programming"
+        (<>Understanding fundamental <HiddenBr/>data structures</>),
+        (<>Introduction to Object <HiddenBr/>Oriented Programming</>)
       ]
     },
     {
       Heading: "GitHub",
       SubHeading1: "Estimated Time:",
       SubHeading2: "~3 Months if taking courses once a week",
-      Paragraph: "Learning GitHub allows programmers to efficiently track changes in their code, manage different versions, and collaborate with others on software development projects. Over 90 percent of Fortune 100 companies use GitHub.",
+      Paragraph: "Learning GitHub allows programmers to efficiently track changes in their code, manage different versions, and collaborate with others on software development projects. Over 90% of Fortune 100 companies use GitHub.",
       WhatTeach: "What Will I Teach:",
-      WhatTeachParagraph: "Since GitHub is arguably one of the most important technologies to learn as a Software Engineer, I will cover all of the essential components of GitHub: eg, how to manage your own code, collaborate with a team, and manage team planning.",      
+      WhatTeachParagraph: "Since GitHub is arguably one of the most important technologies to learn as a Software Engineer, I will cover all of the essential components of GitHub: how to manage code and collaborate with a team.",      
       WhyImportant: "Why is it Important:",
-      WhyImportantParagraph: "GitHub provides a platform for collaboration. Multiple developers can work on the same project simultaneously without conflicts. It’s almost like working on the same google doc with your friends on a class project, but instead for programming. GitHub also allows developers to manage and prioritize tasks, bugs, and feature requests efficiently. This helps keep projects organized and ensures that important issues are addressed. Many companies, especially in the tech industry, use GitHub to manage their code repositories. In fact, over 90 percent of Fortune 100 companies use GitHub. Thus, knowing how to use GitHub effectively is often a valuable skill when seeking employment in software development.",
+      WhyImportantParagraph: "GitHub provides a platform for collaboration. Multiple developers can work on the same project simultaneously without conflicts. It’s almost like working on the same google doc with your friends on a class project, but instead for programming. GitHub also allows developers to manage and prioritize tasks, bugs, and feature requests efficiently. This helps keep projects organized and ensures that important issues are addressed. Many companies, especially in the tech industry, use GitHub to manage their code repositories. In fact, over 90% of Fortune 100 companies use GitHub. Thus, knowing how to use GitHub effectively is a valuable skill when seeking a career as a software engineer.",
       SkillsObtained: "Skills You Will Obtain:",
       Skills: [
         "Basics of Git and Version Control for team collaboration",
         "Basics of Project Management",
-        "Publish/Host a website via Github Pages"
+        (<>Publish / Host a website <HiddenBr/>via Github Pages</>)
       ]
     },
     {
@@ -634,9 +661,9 @@ export const services_Roadmap = [
       SkillsObtained: "Skills You Will Obtain:",
       Skills: [
         "Basics of HTML / CSS",
-        "Utilize Python’s Flask framework to build backend",
-        "Create your own portfolio websites and resume",
-        "Collaborate with fellow students to create a web project"
+        "Python Flask to build backend",
+        (<>Create your own portfolio <HiddenBrLgXl/>website and resume</>),
+        (<>Collaborate with fellow students <HiddenBrLgXl/>to create a web project</>)
       ]
     }
   ]

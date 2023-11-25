@@ -33,7 +33,7 @@ const Image = styled.div`
     background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     ${tw`bg-cover bg-center object-center m-auto w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] rounded rounded-b-none`}
 `;
-const Offsetbackground = tw.div`absolute inset-0 lg:ml-10 lg:mt-10 bg-main-lightBlue md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] rounded rounded-b-none`;
+const Offsetbackground = tw.div`absolute inset-0 ml-6 mt-6 md:ml-8 md:mt-8 lg:ml-10 lg:mt-10 bg-main-lightBlue w-[250px] h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] rounded rounded-b-none`;
 
 var currInfo = whyCS_WhyImp[0];
 export default function ImportanceHero(props) {

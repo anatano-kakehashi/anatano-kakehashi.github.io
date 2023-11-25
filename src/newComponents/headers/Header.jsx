@@ -61,13 +61,16 @@ const LgDesktopNav = tw(DesktopNavLinks)`hidden lg:flex lg:flex-wrap lg:pt-8 lg:
 
 var currPath = "/";
 var engNav = ["Why Learn", "About Me", "Service"];
-var japNav = ["何故プログラミング", "私について", "サービス"];
+var japNav = ["学ぶメリット", "私について", "サービス"];
 export default function Header(props) {
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const navigate = useNavigate();
-  const location = useLocation();
+  let location = useLocation();
 
-  let pathArr = location.pathname.split("/").slice(1);
+  // currPath = (window.location.hash);
+  currPath = (location.pathname);
+  let pathArr = currPath.split("/");
+  pathArr = pathArr.slice(1);
   let currNavPath = "/";
   let currNavLink = japNav;
   if(pathArr[0] === "eng"){
@@ -79,7 +82,10 @@ export default function Header(props) {
 
   const globeLinkJap = (
     <LanguageChangeContainer>
-      <LanguageChange onClick={() => navigate("/eng/" + currPath)}>
+      <LanguageChange onClick={() => {
+          navigate("/eng/" + currPath);
+          navigate(0);
+        }}>
         <GlobeIcon tw="w-6 h-6" />
         &nbsp;English
       </LanguageChange>
@@ -87,7 +93,10 @@ export default function Header(props) {
   );
   const globeLinkEng = (
     <LanguageChangeContainer>
-      <LanguageChange onClick={() => navigate("/" + currPath)}>
+      <LanguageChange onClick={() => {
+          navigate("/" + currPath);
+          navigate(0);
+        }}>
         <GlobeIcon tw="w-6 h-6" />
         &nbsp;日本語
       </LanguageChange>

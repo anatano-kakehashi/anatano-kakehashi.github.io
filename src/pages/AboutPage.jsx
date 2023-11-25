@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import IntroAbout from 'newComponents/AboutMe/1_Hero.jsx';
@@ -13,8 +12,6 @@ import Header from "newComponents/headers/Header.jsx";
 import Footer from "newComponents/footer/Footer.jsx";
 
 export default function AboutPage(props){
-  const navigate = useNavigate();
-  navigate(0);
   
   return (
       <AnimationRevealPage>

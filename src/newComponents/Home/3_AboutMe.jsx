@@ -34,7 +34,7 @@ max-w-md lg:max-w-lg xl:max-w-xl`;
 const Heading = tw(MainHeadingTemplate)`text-left text-main-white leading-snug lg:tracking-[3.6px]`;
 const SubHeading = tw(SubMainHeadingTemplate)`pt-4 text-left text-main-blue font-semibold leading-snug lg:tracking-[2px]`;
 const Description = tw(MainParagraphTemplate)`mt-4 text-main-white font-roboto font-light lg:max-w-lg xl:max-w-xl`;
-const PrimaryButton = tw(PrimaryButtonBase)`mt-8 inline-block md:w-56 lg:w-72 bg-main-blue tracking-wide text-center py-5 rounded-full hocus:bg-main-lighterBlue`;
+const PrimaryButton = tw(PrimaryButtonBase)`mt-8 inline-block bg-main-blue tracking-wide text-center px-12 py-5 rounded-full hocus:bg-main-lighterBlue`;
 
 const ImageColumn = tw(Column)`relative 
 mx-auto lg:mx-6 xl:mx-12 2xl:mx-auto`;

@@ -6,6 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 /* ========= importing assets ============ */
 import {MainHeading as HeadingTitleTemplate, 
     MainParagraph as MainParagraphTemplate,
+    PrimaryButton as PrimaryButtonTemplate,
     Container as ContainerTemplate
   } from "assets/styles/TailwindComponents.jsx";
 
@@ -29,8 +30,7 @@ const Heading = styled(HeadingTitleTemplate)`
 
 const Paragraph = tw(MainParagraphTemplate)`text-main-black xl:max-w-7xl md:px-2 lg:px-4 italic my-8 lg:my-8 leading-loose`;
 
-const PrimaryAction = tw.button`rounded-full px-8 py-5 
-text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl 
+const PrimaryAction = tw(PrimaryButtonTemplate)`rounded-full px-12 py-5 
 text-main-white font-roboto font-extrabold shadow transition duration-300 bg-main-blue 
 hocus:bg-main-lighterBlue hocus:text-main-white focus:outline-none focus:shadow-outline`;
 
@@ -53,7 +53,7 @@ export default function Home_Hero(props) {
                             {currInfo.Paragraph}
                         </Paragraph>
                         <br />
-                        <PrimaryAction>
+                        <PrimaryAction as="a" href={'mailto:anatano.koki@gmail.com'}>
                             {currInfo.PrimaryAction}
                         </PrimaryAction>
                     </Content>

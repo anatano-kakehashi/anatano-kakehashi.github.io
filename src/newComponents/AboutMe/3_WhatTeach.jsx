@@ -57,6 +57,7 @@ export default function WhatTeachHero(props) {
                     :
                     <SubHeading>
                         {currInfo.SubHeading[0]}
+                        <br />
                         {currInfo.SubHeading[1]}
                         <span tw="text-main-lightBlue">
                             {currInfo.SubHeading[2]}

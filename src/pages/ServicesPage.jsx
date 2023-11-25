@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
@@ -11,8 +10,6 @@ import StartJourneyHero from 'newComponents/Home/StartJourney.jsx';
 
 
 export default function ServicesPage(props){
-  const navigate = useNavigate();
-  navigate(0);
   
   return (
     <AnimationRevealPage>

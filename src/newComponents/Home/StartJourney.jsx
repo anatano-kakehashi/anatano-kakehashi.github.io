@@ -24,7 +24,7 @@ const TextColumn = tw.div`md:ml-6 lg:ml-16 lg:mt-10 px-8 md:px-0 text-center md:
 const Heading = tw(MainHeadingTemplate)`font-openSans max-w-3xl lg:max-w-4xl lg:text-left leading-tight lg:tracking-[3.6px]`;
 const Description = tw(SectionDescription)`tracking-wide font-roboto mt-4 max-w-lg text-gray-100 mx-auto lg:mx-0 font-light text-left`;
 
-const PrimaryButton = tw(PrimaryButtonBase)`font-roboto mt-8 text-sm sm:text-base py-4 px-6 bg-main-yellow inline-block hocus:bg-main-lighterBlue rounded-full`;
+const PrimaryButton = tw(PrimaryButtonBase)`font-roboto mt-8 text-sm sm:text-base py-4 px-6 bg-main-yellow inline-block hocus:bg-main-lightestYellow rounded-full`;
 
 var currInfo = startJourneyInfo[0];
 export default function StartJourneyHero(props) {
@@ -41,7 +41,7 @@ export default function StartJourneyHero(props) {
                                 <Heading>{currInfo.Heading}</Heading>
                                 <Description>{currInfo.Description1}</Description>
                                 <Description tw="text-main-yellow tracking-widest">{currInfo.Description2}</Description>
-                                <PrimaryButton as="a" href={'mailto:narimotokoki@gmail.com'}>{currInfo.Button}</PrimaryButton>
+                                <PrimaryButton as="a" href={'mailto:anatano.koki@gmail.com'}>{currInfo.Button}</PrimaryButton>
                             </TextColumn>
                         </Row>
                     </ContentWithVerticalPadding>
