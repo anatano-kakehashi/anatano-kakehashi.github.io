@@ -17,6 +17,7 @@ import {
 import code from "assets/ak-images/services/code.png";
 import github from "assets/ak-images/services/github.png";
 import python from "assets/ak-images/services/python.png";
+import minecraft from "assets/ak-images/services/minecraft.png";
 
 /* ======== importing some data for text =========== */
 import { services_Roadmap } from "assets/ak-data/AK_Info.jsx";
@@ -49,7 +50,7 @@ const Image = styled.div(props => [
 
 
 var currInfo = services_Roadmap[0];
-var photos = [python, github, code];
+var photos = [minecraft, python, github, code];
 export default function JourneyAbout(props) {
     if(props.language === "ENG"){
         currInfo = services_Roadmap[1];
@@ -57,15 +58,15 @@ export default function JourneyAbout(props) {
 
     return (
         <Container>
-            <VerticalTimeline lineColor="lightblue" layout = '1-column'>
+            <VerticalTimeline lineColor="blue" layout = '1-column'>
                 <VerticalTimelineElement
                     contentStyle={{ background: '#FBFBFB', color: '#fff', 'box-shadow': 'none' }}
                     shadowSize = 'large'
-                    iconStyle={{ background: '#5B8BCB', color: '#FBFBFB' }}
+                    iconStyle={{ background: '#002F6D', color: '#FBFBFB' }}
                     icon={<p>01</p>}
                     tw='pb-4 lg:pb-8 xl:pb-12'
                 >
-                    <CardMainHeading tw="text-main-lightBlue">
+                    <CardMainHeading tw="text-main-blue">
                         {currInfo[0].Heading}
                     </CardMainHeading>
                     <CardTimeHeading>
@@ -74,7 +75,7 @@ export default function JourneyAbout(props) {
                     </CardTimeHeading>
                     <Image imageSrc={photos[0]} /> 
 
-                    <CardMainParagraph>
+                    <CardMainParagraph tw='text-main-blue'>
                         {currInfo[0].Paragraph}
                     </CardMainParagraph>
 
@@ -114,15 +115,15 @@ export default function JourneyAbout(props) {
                     </SkillsWapper>
                 </VerticalTimelineElement>
             </VerticalTimeline>
-            <VerticalTimeline lineColor="yellow" layout = '1-column'>
+            <VerticalTimeline lineColor="lightblue" layout = '1-column'>
                 <VerticalTimelineElement
                     contentStyle={{ background: '#FBFBFB', color: '#fff', 'box-shadow': 'none' }}
                     shadowSize = 'large'
-                    iconStyle={{ background: '#FBA70E', color: '#FBFBFB' }}
+                    iconStyle={{ background: '#5B8BCB', color: '#FBFBFB' }}
                     icon={<p>02</p>}
                     tw='pb-4 lg:pb-8 xl:pb-12'
                 >
-                    <CardMainHeading tw="text-main-yellow">
+                    <CardMainHeading tw="text-main-lightBlue">
                         {currInfo[1].Heading}
                     </CardMainHeading>
                     <CardTimeHeading>
@@ -131,7 +132,7 @@ export default function JourneyAbout(props) {
                     </CardTimeHeading>
                     <Image imageSrc={photos[1]} /> 
 
-                    <CardMainParagraph tw='text-main-yellow'>
+                    <CardMainParagraph tw='text-main-lightBlue'>
                         {currInfo[1].Paragraph}
                     </CardMainParagraph>
 
@@ -153,17 +154,17 @@ export default function JourneyAbout(props) {
                         {currInfo[1].SkillsObtained}
                     </CardSubHeading>
                     <SkillsWapper>
-                        <SkillCard tw='bg-main-lightestYellow'>
+                        <SkillCard>
                             <SkillCardParagraph>
                                 {currInfo[1].Skills[0]}
                             </SkillCardParagraph>
                         </SkillCard>
-                        <SkillCard tw='bg-main-lightestYellow'>
+                        <SkillCard>
                             <SkillCardParagraph>
                                 {currInfo[1].Skills[1]}
                             </SkillCardParagraph>
                         </SkillCard>
-                        <SkillCard tw='bg-main-lightestYellow'>
+                        <SkillCard>
                             <SkillCardParagraph>
                                 {currInfo[1].Skills[2]}
                             </SkillCardParagraph>
@@ -171,15 +172,15 @@ export default function JourneyAbout(props) {
                     </SkillsWapper>
                 </VerticalTimelineElement>
             </VerticalTimeline>
-            <VerticalTimeline lineColor="blue" layout = '1-column'>
+            <VerticalTimeline lineColor="yellow" layout = '1-column'>
                 <VerticalTimelineElement
                     contentStyle={{ background: '#FBFBFB', color: '#fff', 'box-shadow': 'none' }}
                     shadowSize = 'large'
-                    iconStyle={{ background: '#002F6D', color: '#FBFBFB' }}
+                    iconStyle={{ background: '#FBA70E', color: '#FBFBFB' }}
                     icon={<p>03</p>}
                     tw='pb-4 lg:pb-8 xl:pb-12'
                 >
-                    <CardMainHeading tw="text-main-blue">
+                    <CardMainHeading tw="text-main-yellow">
                         {currInfo[2].Heading}
                     </CardMainHeading>
                     <CardTimeHeading>
@@ -188,7 +189,7 @@ export default function JourneyAbout(props) {
                     </CardTimeHeading>
                     <Image imageSrc={photos[2]} /> 
 
-                    <CardMainParagraph tw='text-main-blue'>
+                    <CardMainParagraph tw='text-main-yellow'>
                         {currInfo[2].Paragraph}
                     </CardMainParagraph>
 
@@ -235,6 +236,71 @@ export default function JourneyAbout(props) {
                     </SkillsWapper>
                 </VerticalTimelineElement>
             </VerticalTimeline>
+            <VerticalTimeline lineColor="blue" layout = '1-column'>
+                <VerticalTimelineElement
+                    contentStyle={{ background: '#FBFBFB', color: '#fff', 'box-shadow': 'none' }}
+                    shadowSize = 'large'
+                    iconStyle={{ background: '#002F6D', color: '#FBFBFB' }}
+                    icon={<p>04</p>}
+                    tw='pb-4 lg:pb-8 xl:pb-12'
+                >
+                    <CardMainHeading tw="text-main-blue">
+                        {currInfo[3].Heading}
+                    </CardMainHeading>
+                    <CardTimeHeading>
+                        <span tw="font-medium">{currInfo[3].SubHeading1}</span>
+                        {currInfo[3].SubHeading2}
+                    </CardTimeHeading>
+                    <Image imageSrc={photos[3]} /> 
+
+                    <CardMainParagraph tw='text-main-blue'>
+                        {currInfo[3].Paragraph}
+                    </CardMainParagraph>
+
+                    <CardSubHeading tw="text-main-lightBlue">
+                        {currInfo[3].WhatTeach}
+                    </CardSubHeading>
+                    <CardParagraph>
+                        {currInfo[3].WhatTeachParagraph}
+                    </CardParagraph>
+
+                    <CardSubHeading tw="text-main-yellow">
+                        {currInfo[3].WhyImportant}
+                    </CardSubHeading>
+                    <CardParagraph>
+                        {currInfo[3].WhyImportantParagraph}
+                    </CardParagraph>
+
+                    <CardSubHeading tw="text-main-blue">
+                        {currInfo[3].SkillsObtained}
+                    </CardSubHeading>
+                    <SkillsWapper tw='flex-row'>
+                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
+                            <SkillCardParagraph tw='text-main-white text-left'>
+                                {currInfo[3].Skills[0]}
+                            </SkillCardParagraph>
+                        </SkillCard>
+                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
+                            <SkillCardParagraph tw='text-main-white text-left'>
+                                {currInfo[3].Skills[1]}
+                            </SkillCardParagraph>
+                        </SkillCard>
+                    </SkillsWapper>
+                    <SkillsWapper tw='flex-row'>
+                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
+                            <SkillCardParagraph tw='text-main-white text-left'>
+                                {currInfo[3].Skills[2]}
+                            </SkillCardParagraph>
+                        </SkillCard>
+                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
+                            <SkillCardParagraph tw='text-main-white text-left'>
+                                {currInfo[3].Skills[3]}
+                            </SkillCardParagraph>
+                        </SkillCard>
+                    </SkillsWapper>
+                </VerticalTimelineElement>
+            </VerticalTimeline>
+          
         </Container>
     );
 };

@@ -558,6 +558,31 @@ export const services_Hero = [
 export const services_Roadmap = [
   [
     {
+      Heading: "Minecraft 入門",
+      SubHeading1: "推定時間：",
+      SubHeading2: "週1回受講の場合、〜1年",
+      Paragraph: (
+      <>
+        Minecraft Educationは、プログラミング学習のための魅力的なプラットフォームであり、創造性とコーディングスキルが花開くユニークでインタラクティブな環境を提供します。<HiddenBr/>世界中に数百万人のプレイヤーを持つMinecraftは、<HiddenBr/>体験を通してプログラミングの重要な概念を紹介する優れた媒体として役立ちます。
+      </>),
+      WhatTeach: "何を教えるか：",
+      WhatTeachParagraph: "Minecraftの没入感のあるインタラクティブな世界を使って、プログラミングの基本的な概念をすべてカバーします。Minecraftの魅力的な環境を活用することで、コーディングの原則の強固な基礎を確立し、将来より複雑なトピックを把握しやすくします。このコースは、ゲーム開発、MOD、そしてその先の様々な高度なコンセプトへの準備となります。",      
+      WhyImportant: "なぜ重要なのか：",
+      WhyImportantParagraph: "マインクラフトを通してコードを学ぶことは、楽しいだけでなく、非常に価値のあることです。Minecraftのユニークなプラットフォームは、魅力的で親しみやすい環境でプログラミングの概念を実践的に応用することを可能にします。Minecraftでコーディングすることで、創造性を刺激し、問題解決能力を高め、将来の学習のための強固な基礎を築くことができます。ゲーム開発、ソフトウェアエンジニアリング、技術革新など、さまざまな分野でプログラミングが広く使われている今、Minecraftを通じてこれらのスキルを習得すれば、キャリアを有利に進め、多くのチャンスを広げることができます。",
+      SkillsObtained: "身につくスキル：",
+      Skills: [
+        (<>
+          プログラミング /<br/>
+          アルゴリズムの基礎
+        </>),
+        "基本的なデータ構造の理解",
+        (<>
+          オブジェクト指向<br/>
+          プログラミング
+        </>)
+      ]
+    },
+    {
       Heading: "Python 入門",
       SubHeading1: "推定時間：",
       SubHeading2: "週1回受講の場合、〜1年",
@@ -617,6 +642,22 @@ export const services_Roadmap = [
     }
   ] ,
   [
+    {
+      Heading: "Minecraft Education",
+      SubHeading1: "Estimated Time:",
+      SubHeading2: "~1 year if taking courses once a week",
+      Paragraph: "Minecraft Education is an engaging platform for learning programming, providing a unique, interactive environment where creativity and coding skills flourish. With millions of players worldwide, Minecraft serves as an excellent medium for introducing key programming concepts through hands-on experience.",
+      WhatTeach: "What Will I Teach:",
+      WhatTeachParagraph: "Using the immersive and interactive world of Minecraft, I will cover all the fundamental concepts of programming. By leveraging Minecraft's engaging environment, we will establish a solid foundation in coding principles, making it easier to grasp more complex topics in the future. This course will prepare you for various advanced concepts such as game development, modding, and beyond.",      
+      WhyImportant: "Why is it Important:",
+      WhyImportantParagraph: "Learning to code through Minecraft is not only fun but also incredibly valuable. Minecraft's unique platform allows for the practical application of programming concepts in an engaging and familiar environment. Coding in Minecraft can spark creativity, enhance problem-solving skills, and provide a strong foundation for future learning. With the widespread use of programming in various fields such as game development, software engineering, and technology innovation, mastering these skills through Minecraft will give you a head start in your career and open up numerous opportunities.",
+      SkillsObtained: "Skills You Will Obtain:",
+      Skills: [
+        "Basics of programming concepts, algorithms, and problem-solving",
+        (<>Understanding fundamental <HiddenBr/>data structures</>),
+        (<>Introduction to Object <HiddenBr/>Oriented Programming</>)
+      ]
+    },
     {
       Heading: "Intro to Python",
       SubHeading1: "Estimated Time:",
