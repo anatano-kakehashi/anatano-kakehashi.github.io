@@ -97,18 +97,18 @@ export default function JourneyAbout(props) {
                         {currInfo[0].SkillsObtained}
                     </CardSubHeading>
                     <SkillsWapper>
-                        <SkillCard>
-                            <SkillCardParagraph>
+                        <SkillCard tw='bg-main-backgroundBlue'>
+                            <SkillCardParagraph tw='text-main-white'>
                                 {currInfo[0].Skills[0]}
                             </SkillCardParagraph>
                         </SkillCard>
-                        <SkillCard>
-                            <SkillCardParagraph>
+                        <SkillCard tw='bg-main-backgroundBlue'>
+                            <SkillCardParagraph tw='text-main-white'>
                                 {currInfo[0].Skills[1]}
                             </SkillCardParagraph>
                         </SkillCard>
-                        <SkillCard>
-                            <SkillCardParagraph>
+                        <SkillCard tw='bg-main-backgroundBlue'>
+                            <SkillCardParagraph tw='text-main-white'>
                                 {currInfo[0].Skills[2]}
                             </SkillCardParagraph>
                         </SkillCard>
@@ -210,27 +210,20 @@ export default function JourneyAbout(props) {
                     <CardSubHeading tw="text-main-blue">
                         {currInfo[2].SkillsObtained}
                     </CardSubHeading>
-                    <SkillsWapper tw='flex-row'>
-                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
-                            <SkillCardParagraph tw='text-main-white text-left'>
+                    <SkillsWapper>
+                        <SkillCard tw='bg-main-backgroundYellow'>
+                            <SkillCardParagraph>
                                 {currInfo[2].Skills[0]}
                             </SkillCardParagraph>
                         </SkillCard>
-                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
-                            <SkillCardParagraph tw='text-main-white text-left'>
+                        <SkillCard tw='bg-main-backgroundYellow'>
+                            <SkillCardParagraph>
                                 {currInfo[2].Skills[1]}
                             </SkillCardParagraph>
                         </SkillCard>
-                    </SkillsWapper>
-                    <SkillsWapper tw='flex-row'>
-                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
-                            <SkillCardParagraph tw='text-main-white text-left'>
+                        <SkillCard tw='bg-main-backgroundYellow'>
+                            <SkillCardParagraph>
                                 {currInfo[2].Skills[2]}
-                            </SkillCardParagraph>
-                        </SkillCard>
-                        <SkillCard tw='basis-1/2 bg-main-backgroundBlue md:h-[140px]'>
-                            <SkillCardParagraph tw='text-main-white text-left'>
-                                {currInfo[2].Skills[3]}
                             </SkillCardParagraph>
                         </SkillCard>
                     </SkillsWapper>

@@ -20,10 +20,12 @@ module.exports = {
         backgroundBlue: '#577398',
         lightBlue: '#5B8BCB',
         lighterBlue: '#002F6D99',
+        backgroundLighterBlue: '#002F6D99',
         lightestBlue: '#E3EAF4',
         red: "#EA3427",
         yellow: '#FBA70E',
         lightestYellow: '#FBE2B4',
+        backgroundYellow: '#FBE2B4',
         black: '#121212',
         white: '#FBFBFB'
       },
