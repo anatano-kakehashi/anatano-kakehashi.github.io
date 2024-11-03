@@ -37,8 +37,6 @@ export const HiddenBrMd = tw.br`hidden md:block`;
 export const HightlightedText = tw.span`text-primary-500`
 
 
-
-
 // AK related components
 
 export const MainSectionHeading = tw.h1`text-4xl sm:text-6xl md:text-8xl lg:text-10xl xl:text-12xl font-openSans font-extrabold`;

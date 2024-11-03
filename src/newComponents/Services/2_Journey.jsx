@@ -10,7 +10,8 @@ import {
     MainHeading as MainHeadingTemplate,
     MainHeading2 as MainHeading2Template,
     SubMainHeading as SubMainHeadingTemplate,
-    MainParagraph as MainParagraphTemplate
+    MainParagraph as MainParagraphTemplate,
+
 
   } from "assets/styles/TailwindComponents.jsx";
 
@@ -30,6 +31,12 @@ const CardTimeHeading = tw(MainParagraphTemplate)`font-roboto font-light text-ma
 const CardMainHeading = tw(MainHeadingTemplate)`font-openSans tracking-[3.6px] font-extrabold text-main-yellow text-center`;
 const CardMainParagraph = tw(SubMainHeadingTemplate)`font-openSans font-light italic text-main-lighterBlue text-left py-8 lg:py-12`;
 
+//jin areas, card top part including heading, logo, main paragraph
+const CardMainHeadings = tw(MainHeadingTemplate)`font-openSans tracking-[3.6px] font-extrabold text-main-blue`;
+const Description = tw(MainParagraphTemplate)`text-main-blue italic mt-2`;
+const Containers = tw.div`flex flex-col sm:flex-row px-4`;
+const TextContainers = tw.div`basis-3/5 w-full space-y-2`;
+
 // what teach and why important
 const CardSubHeading = tw(MainHeading2Template)`font-roboto font-normal text-main-black text-left`;
 const CardParagraph = tw(MainParagraphTemplate)`font-roboto font-light text-main-black text-left pb-8 lg:pb-12`;
@@ -41,11 +48,12 @@ const SkillCardParagraph = tw(CardParagraph)`text-center self-center min-w-full`
 
 const Image = styled.div(props => [
     `background-image: url("${props.imageSrc}");`,
-    tw`bg-cover bg-center object-center m-auto  
+    tw`bg-cover bg-center object-center m-auto 
     w-[150px] h-[150px]
     sm:w-[200px] sm:h-[200px]
     md:w-[250px] md:h-[250px]
-    lg:w-[300px] lg:h-[300px] xl:w-[400px] xl:h-[400px] rounded`
+    lg:w-64 lg:h-64
+    xl:w-80 xl:h-80 rounded`
 ]);
 
 
@@ -66,20 +74,29 @@ export default function JourneyAbout(props) {
                     icon={<p>01</p>}
                     tw='pb-4 lg:pb-8 xl:pb-12'
                 >
-                    <CardMainHeading tw="text-main-blue">
-                        {currInfo[0].Heading}
-                    </CardMainHeading>
-                    <CardTimeHeading>
-                        <span tw="font-medium">{currInfo[0].SubHeading1}</span>
+                    <Containers>
+                        <TextContainers>
+                            <CardMainHeadings tw="text-main-blue">
+                                {currInfo[0].Heading}
+                            </CardMainHeadings>
+                            <Description>
+                                {currInfo[0].Paragraph}
+                            </Description>
+                        </TextContainers>
+                        <Image tw="sm:basis-2/3 w-full flex">
+                            <img src={photos[0]} alt="Minecraft Block" tw="w-full h-auto object-contain"/>
+                        </Image>
+                    </Containers>
+                
+                  
+                    <CardSubHeading tw="text-main-yellow">
+                        {currInfo[0].SubHeading1}
+                    </CardSubHeading>
+                    <CardParagraph>
                         {currInfo[0].SubHeading2}
-                    </CardTimeHeading>
-                    <Image imageSrc={photos[0]} /> 
+                    </CardParagraph>
 
-                    <CardMainParagraph tw='text-main-blue'>
-                        {currInfo[0].Paragraph}
-                    </CardMainParagraph>
-
-                    <CardSubHeading tw="text-main-lightBlue">
+                    <CardSubHeading tw="text-main-yellow">
                         {currInfo[0].WhatTeach}
                     </CardSubHeading>
                     <CardParagraph>
@@ -123,20 +140,28 @@ export default function JourneyAbout(props) {
                     icon={<p>02</p>}
                     tw='pb-4 lg:pb-8 xl:pb-12'
                 >
-                    <CardMainHeading tw="text-main-lightBlue">
-                        {currInfo[1].Heading}
-                    </CardMainHeading>
-                    <CardTimeHeading>
-                        <span tw="font-medium">{currInfo[1].SubHeading1}</span>
+                    <Containers>
+                        <TextContainers>
+                            <CardMainHeadings tw="text-main-blue">
+                                {currInfo[1].Heading}
+                            </CardMainHeadings>
+                            <Description>
+                                {currInfo[1].Paragraph}
+                            </Description>
+                        </TextContainers>
+                        <Image tw="col-span-2 flex justify-center items-center">
+                            <img src={photos[1]} alt="Minecraft Block" tw="w-full h-auto md:w-32 md:h-32 object-contain"/>
+                        </Image>
+                    </Containers>
+                  
+                    <CardSubHeading tw="text-main-yellow">
+                        {currInfo[1].SubHeading1}
+                    </CardSubHeading>
+                    <CardParagraph>
                         {currInfo[1].SubHeading2}
-                    </CardTimeHeading>
-                    <Image imageSrc={photos[1]} /> 
+                    </CardParagraph>
 
-                    <CardMainParagraph tw='text-main-lightBlue'>
-                        {currInfo[1].Paragraph}
-                    </CardMainParagraph>
-
-                    <CardSubHeading tw="text-main-lightBlue">
+                    <CardSubHeading tw="text-main-yellow">
                         {currInfo[1].WhatTeach}
                     </CardSubHeading>
                     <CardParagraph>
@@ -180,20 +205,29 @@ export default function JourneyAbout(props) {
                     icon={<p>03</p>}
                     tw='pb-4 lg:pb-8 xl:pb-12'
                 >
-                    <CardMainHeading tw="text-main-yellow">
-                        {currInfo[2].Heading}
-                    </CardMainHeading>
-                    <CardTimeHeading>
-                        <span tw="font-medium">{currInfo[2].SubHeading1}</span>
-                        {currInfo[2].SubHeading2}
-                    </CardTimeHeading>
-                    <Image imageSrc={photos[2]} /> 
+                    <Containers>
+                        <TextContainers>
+                            <CardMainHeadings tw="text-main-blue">
+                                {currInfo[3].Heading}
+                            </CardMainHeadings>
+                            <Description>
+                                {currInfo[3].Paragraph}
+                            </Description>
+                        </TextContainers>
+                        <Image tw="col-span-2 flex justify-center items-center">
+                            <img src={photos[3]} alt="Minecraft Block" tw="w-full h-auto md:w-32 md:h-32 object-contain"/>
+                        </Image>
+                    </Containers>
+                
+                  
+                    <CardSubHeading tw="text-main-yellow">
+                        {currInfo[3].SubHeading1}
+                    </CardSubHeading>
+                    <CardParagraph>
+                        {currInfo[3].SubHeading2}
+                    </CardParagraph>
 
-                    <CardMainParagraph tw='text-main-yellow'>
-                        {currInfo[2].Paragraph}
-                    </CardMainParagraph>
-
-                    <CardSubHeading tw="text-main-lightBlue">
+                    <CardSubHeading tw="text-main-yellow">
                         {currInfo[2].WhatTeach}
                     </CardSubHeading>
                     <CardParagraph>
@@ -244,20 +278,29 @@ export default function JourneyAbout(props) {
                     icon={<p>04</p>}
                     tw='pb-4 lg:pb-8 xl:pb-12'
                 >
-                    <CardMainHeading tw="text-main-blue">
-                        {currInfo[3].Heading}
-                    </CardMainHeading>
-                    <CardTimeHeading>
-                        <span tw="font-medium">{currInfo[3].SubHeading1}</span>
+                    <Containers>
+                        <TextContainers>
+                            <CardMainHeadings tw="text-main-blue">
+                                {currInfo[3].Heading}
+                            </CardMainHeadings>
+                            <Description>
+                                {currInfo[3].Paragraph}
+                            </Description>
+                        </TextContainers>
+                        <Image tw="col-span-2 flex justify-center items-center">
+                            <img src={photos[3]} alt="Minecraft Block" tw="w-full h-auto md:w-32 md:h-32 object-contain"/>
+                        </Image>
+                    </Containers>
+                
+                  
+                    <CardSubHeading tw="text-main-yellow">
+                        {currInfo[3].SubHeading1}
+                    </CardSubHeading>
+                    <CardParagraph>
                         {currInfo[3].SubHeading2}
-                    </CardTimeHeading>
-                    <Image imageSrc={photos[3]} /> 
+                    </CardParagraph>
 
-                    <CardMainParagraph tw='text-main-blue'>
-                        {currInfo[3].Paragraph}
-                    </CardMainParagraph>
-
-                    <CardSubHeading tw="text-main-lightBlue">
+                    <CardSubHeading tw="text-main-yellow">
                         {currInfo[3].WhatTeach}
                     </CardSubHeading>
                     <CardParagraph>
