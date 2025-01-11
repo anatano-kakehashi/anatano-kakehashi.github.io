@@ -14,7 +14,7 @@ import { ReactComponent as MailIcon } from "feather-icons/dist/icons/mail.svg";
 // import { ReactComponent as MailIcon } from "assets/treact-images/email-newsletter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "assets/treact-images/youtube-icon.svg";
 
-const NavLinks = tw.div`inline-block cursor-pointer pt-4`;
+const NavLinks = tw.div`hidden md:inline-block cursor-pointer pt-4`;
 
 const NavLink = tw.a`
   text-sm lg:text-lg mx-2 lg:mx-6 my-2 lg:my-0
@@ -47,7 +47,7 @@ const SocialLink = styled.a`
 `;
 const CopyrightContainer = tw(ContainerBase)`bg-main-lighterBlue text-main-black -mx-8`
 const CopyrightContent = tw.div`max-w-screen-xl mx-auto py-8`;
-const CopyrightText = tw.p`text-center font-extrabold tracking-wide text-xs lg:text-sm text-main-black`;
+const CopyrightText = tw.p`text-center font-extrabold tracking-wider text-xs lg:text-sm text-main-white`;
 
 var currPath = "/";
 export default function Footer(props) {
@@ -95,6 +95,8 @@ export default function Footer(props) {
       <NavLink onClick={() => navigate("/whyLearn")}>何故プログラミング</NavLink>
       <NavLink onClick={() => navigate("/aboutMe")}>私について</NavLink>
       <NavLink onClick={() => navigate("/service")}>サービス</NavLink>
+      <NavLink onClick={() => navigate("/feedback")}>ご利用者の声</NavLink>
+      <NavLink onClick={() => navigate("/faq")}>FAQ</NavLink>
     </NavLinks>
   ];
   const tbasNavLinksEng = [
@@ -102,6 +104,8 @@ export default function Footer(props) {
       <NavLink onClick={() => navigate("/eng/whyLearn")}>Why Learn</NavLink>
       <NavLink onClick={() => navigate("/eng/aboutMe")}>About Me</NavLink>
       <NavLink onClick={() => navigate("/eng/service")}>Service</NavLink>
+      <NavLink onClick={() => navigate("/eng/feedback")}>Feedback</NavLink>
+      <NavLink onClick={() => navigate("/eng/faq")}>FAQ</NavLink>
     </NavLinks>
   ];
 
@@ -118,7 +122,7 @@ export default function Footer(props) {
               <SocialLink href="mailto:anatano.koki@gmail.com">
                 <MailIcon />
               </SocialLink>
-              <SocialLink href="https://youtube.com" target="_blank">
+              <SocialLink href="https://youtu.be/fETZIYPfyp4" target="_blank">
                 <YoutubeIcon />
               </SocialLink>
               {/* <SocialLink href="https://twitter.com">

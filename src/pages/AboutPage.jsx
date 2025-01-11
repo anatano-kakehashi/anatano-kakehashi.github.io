@@ -8,8 +8,8 @@ import WhyMeHero from 'newComponents/AboutMe/4_WhyMe.jsx';
 import MyGoalHero from 'newComponents/AboutMe/5_Goal.jsx';
 import StartJourneyHero from 'newComponents/Home/StartJourney.jsx';
 
-import Header from "newComponents/headers/Header.jsx";
-import Footer from "newComponents/footer/Footer.jsx";
+import Header from "newComponents/Header/Header.jsx";
+import Footer from "newComponents/Footer/Footer.jsx";
 
 export default function AboutPage(props){
   

@@ -7,46 +7,44 @@ import { useNavigate } from 'react-router-dom';
 
 /* ========= importing assets ============ */
 import {
-    MainHeading2 as MainHeadingTemplate,
-    SubMainHeading as SubMainHeadingTemplate,
-    MainParagraph as MainParagraphTemplate,
-    PrimaryButton as PrimaryButtonBase,
-    Container as BaseContainer
-  } from "assets/styles/TailwindComponents.jsx";
+  MainHeading2 as MainHeadingTemplate,
+  SubMainHeading as SubMainHeadingTemplate,
+  MainParagraph as MainParagraphTemplate,
+  PrimaryButton as PrimaryButtonBase,
+  Container as BaseContainer,
+  ContentWithPaddingXl as PaddingContainer
+} from "assets/styles/TailwindComponents.jsx";
 
 import { home_aboutMe } from "assets/ak-data/AK_Info";
 import background from "assets/ak-images/aboutMe/background.png";
 import profile from "assets/ak-images/aboutMe/home_profile.png";
 
 const Container = styled(BaseContainer)`
-    ${tw`px-8`}
-    background: var(--lighter-blue-NT, linear-gradient(0deg, rgba(0, 47, 109, 0.60) 0%, rgba(0, 47, 109, 0.60) 100%), #D9D9D9);
+  ${tw`px-8`}
+  background: var(--lighter-blue-NT, linear-gradient(0deg, rgba(0, 47, 109, 0.60) 0%, rgba(0, 47, 109, 0.60) 100%), #D9D9D9);
 `;
 
-const VertCont = tw.div`py-12 lg:py-20`
+const Content = tw(PaddingContainer)`pt-16 pb-10 lg:py-24`;
 
-const Row = tw.div`flex flex-col md:flex-row justify-between items-center lg:py-10 max-w-screen-2xl mx-auto md:px-8`;
+const Row = tw.div`flex flex-col md:flex-row justify-between items-center mx-auto md:px-8`;
 const Column = tw.div``;
 
-const TextColumn = tw(Column)`pt-12 md:pt-0 
-mx-auto lg:mx-6 xl:mx-12 2xl:mx-auto
-max-w-md lg:max-w-lg xl:max-w-xl`;
+const TextColumn = tw(Column)`pt-12 md:pt-0 mx-auto`;
 const Heading = tw(MainHeadingTemplate)`text-left text-main-white leading-snug lg:tracking-[3.6px]`;
 const SubHeading = tw(SubMainHeadingTemplate)`pt-4 text-left text-main-blue font-semibold leading-snug lg:tracking-[2px]`;
 const Description = tw(MainParagraphTemplate)`mt-4 text-main-white font-roboto font-light lg:max-w-lg xl:max-w-xl`;
-const PrimaryButton = tw(PrimaryButtonBase)`mt-8 inline-block bg-main-blue tracking-wide text-center px-12 py-5 rounded-full hocus:bg-main-lighterBlue`;
+const PrimaryButton = tw(PrimaryButtonBase)`mt-4 md:mt-8 inline-block bg-main-blue tracking-wide text-center md:px-12 md:py-5 rounded-full hocus:bg-main-lighterBlue`;
 
-const ImageColumn = tw(Column)`relative 
-mx-auto lg:mx-6 xl:mx-12 2xl:mx-auto`;
+const ImageColumn = tw(Column)`relative mx-auto lg:mx-6 xl:mx-12 2xl:mx-auto`;
 const ImageContainer = tw.div`relative z-40`;
 
 const Image = styled.div(props => [
-    `background-image: url("${props.imageSrc}");`,
-    tw`bg-cover bg-center object-center m-auto w-[270px] h-[270px] lg:w-[360px] lg:h-[360px] xl:w-[450px] xl:h-[450px] rounded rounded-b-none`
-  ]);
+  `background-image: url("${props.imageSrc}");`,
+  tw`bg-cover bg-center object-center m-auto w-[270px] h-[270px] lg:w-[360px] lg:h-[360px] xl:w-[450px] xl:h-[450px] rounded rounded-b-none`
+]);
 const Offsetbackground = styled.div(props => [
-    `background-image: url("${props.imageSrc}");`,
-    tw`absolute inset-0 mr-10 bg-cover bg-center m-auto w-[250px] h-[310px] lg:w-[340px] lg:h-[420px] xl:w-[440px] xl:h-[520px] rounded rounded-b-none`
+  `background-image: url("${props.imageSrc}");`,
+  tw`absolute inset-0 mr-10 bg-cover bg-center m-auto w-[250px] h-[310px] lg:w-[340px] lg:h-[420px] xl:w-[440px] xl:h-[520px] rounded rounded-b-none`
 ]);
 
 var currInfo = home_aboutMe[0];
@@ -60,7 +58,7 @@ export default function AboutMeHero(props) {
 
   return (
     <Container>
-      <VertCont>
+      <Content>
         <Row>
           <ImageColumn>
             <ImageContainer>
@@ -77,7 +75,7 @@ export default function AboutMeHero(props) {
             </PrimaryButton>
           </TextColumn>
         </Row>
-      </VertCont>
+      </Content>
     </Container>
   );
 };
