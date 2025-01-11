@@ -6,6 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 /* ========= importing assets ============ */
 import {
   MainHeading as MainHeadingTemplate,
+  MainParagraph2 as SectionDescriptionBase,
   PrimaryButton as PrimaryButtonBase,
   ContentFormatted as BaseContainer,
   ContentFormatted2, HiddenBr_BreakPoint3
@@ -13,10 +14,7 @@ import {
 
 import { contactUsForm } from "assets/ak-data/AK_Info.jsx";
 
-const Container = tw(BaseContainer)`lg:py-12 px-6 lg:px-0`;
-
-const Heading = tw(MainHeadingTemplate)`text-left text-main-blue tracking-widest font-black pl-4 md:pl-8 2xl:pl-0 pt-8 pb-6`;
-const HorizontalLine = tw.div`text-main-black bg-main-black border h-[3px]`;
+const Container = tw(BaseContainer)`py-0 px-6 lg:px-0`;
 
 const Row = tw(ContentFormatted2)`flex flex-col bg-main-lightestBlue 
 justify-between items-center 
@@ -33,7 +31,9 @@ const DropDown = tw.select`text-sm md:text-base lg:text-lg xl:text-xl p-4`;
 const Options = tw.option`text-sm md:text-base lg:text-lg xl:text-xl`;
 const Textarea = styled(Input).attrs({as: "textarea"})`
   ${tw`h-40`}
-`
+`;
+
+const SectionDesc = tw(SectionDescriptionBase)`text-left text-main-black font-normal lg:px-6`;
 
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8 bg-main-blue hocus:bg-main-lighterBlue`;
 
@@ -46,10 +46,6 @@ export default function ContactForm(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [heard, setHeard] = useState(currInfo.entryForms[2].options[0]);
-  const [lessonStructure, setLessonStructure] = useState(currInfo.entryForms[3].options[0]);
-  const [gradeLevel, setGradeLevel] = useState(currInfo.entryForms[4].options[0]);
-  const [experience, setExperience] = useState('');
-  const [reason, setReason] = useState('');
   const [question, setQuestion] = useState('');
   const [responseMessage, setResponseMessage] = useState('');
 
@@ -59,23 +55,11 @@ export default function ContactForm(props) {
     const formData = new FormData();
     formData.append('entry.1487186729', name); 
     formData.append('entry.1449548638', email); 
-    formData.append('entry.970909276', ""); 
     formData.append('entry.1148002302', heard); 
-
-    formData.append('entry.1798516964', ""); 
-    formData.append('entry.519991170', lessonStructure); 
-
-    formData.append('entry.955722451', "");
-    formData.append('entry.706252611', gradeLevel); 
-
-    formData.append('entry.1658336433', experience); 
-    formData.append('entry.1445632879', reason); 
     formData.append('entry.1045897173', question);  
-    formData.append('entry.1903976862', "");  
-    formData.append('entry.1848082901', "");  
 
     try {
-      await fetch('https://docs.google.com/forms/u/2/d/e/1FAIpQLSesjLsKdbkG6gDfIShcHemsBpbm1o0_hlrUYgSBL08ibEkp9Q/formResponse', {
+      await fetch('https://docs.google.com/forms/u/2/d/e/1FAIpQLSfq8wJ4R2WcCYHPgXAM9cTBhmTERpIMY_5QGoAJzY_wKGYvng/formResponse', {
         method: 'POST',
         mode: 'no-cors', // Use no-cors mode to avoid CORS issues
         body: formData,
@@ -84,10 +68,6 @@ export default function ContactForm(props) {
       setName('');
       setEmail('');
       setHeard('');
-      setLessonStructure('');
-      setGradeLevel('');
-      setExperience('');
-      setReason('');
       setQuestion('');
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -97,10 +77,9 @@ export default function ContactForm(props) {
 
   return (
     <Container>
-      <Heading>{currInfo.heading}</Heading>
-      <HorizontalLine />
-      <HiddenBr_BreakPoint3 />
+      <SectionDesc>{currInfo.description}</SectionDesc>
       <Row>
+        <SectionDesc tw="text-main-blue font-bold">{currInfo.subHeading}</SectionDesc>
         <Form onSubmit={handleSubmit}>
           <Label for="name">
             <RedLabel>{currInfo.required}</RedLabel>
@@ -125,44 +104,11 @@ export default function ContactForm(props) {
             <Options value={currInfo.entryForms[2].options[3]}>{currInfo.entryForms[2].options[3]}</Options>
           </DropDown>
 
-          <Label for="lessonStructure">
+          <Label for="question">
             <RedLabel>{currInfo.required}</RedLabel>
             {currInfo.entryForms[3].entry}
           </Label>
-          <DropDown id="lessonStructure" value={lessonStructure} onChange={(e) => setLessonStructure(e.target.value)}>
-            <Options value={currInfo.entryForms[3].options[0]}>{currInfo.entryForms[3].options[0]}</Options>
-            <Options value={currInfo.entryForms[3].options[1]}>{currInfo.entryForms[3].options[1]}</Options>
-          </DropDown>
-
-          <Label for="gradeLevel">
-            <RedLabel>{currInfo.required}</RedLabel>
-            {currInfo.entryForms[4].entry}
-          </Label>
-          <DropDown id="gradeLevel" value={gradeLevel} onChange={(e) => setGradeLevel(e.target.value)}>
-            <Options value={currInfo.entryForms[4].options[0]}>{currInfo.entryForms[4].options[0]}</Options>
-            <Options value={currInfo.entryForms[4].options[1]}>{currInfo.entryForms[4].options[1]}</Options>
-            <Options value={currInfo.entryForms[4].options[2]}>{currInfo.entryForms[4].options[2]}</Options>
-            <Options value={currInfo.entryForms[4].options[3]}>{currInfo.entryForms[4].options[3]}</Options>
-            <Options value={currInfo.entryForms[4].options[4]}>{currInfo.entryForms[4].options[4]}</Options>
-          </DropDown>
-
-          <Label for="experience">
-            <RedLabel>{currInfo.required}</RedLabel>
-            {currInfo.entryForms[5].entry}
-          </Label>
-          <Input id="experience" type="text" value={experience} onChange={(e) => setExperience(e.target.value)} placeholder={currInfo.entryForms[5].example} required/>
-
-          <Label for="reason">
-            <RedLabel>{currInfo.required}</RedLabel>
-            {currInfo.entryForms[6].entry}
-          </Label>
-          <Input id="reason" type="text" value={reason} onChange={(e) => setReason(e.target.value)} placeholder={currInfo.entryForms[6].example} required/>
-          
-          <Label for="question">
-            <RedLabel>{currInfo.required}</RedLabel>
-            {currInfo.entryForms[7].entry}
-          </Label>
-          <Textarea id="question" value={question} onChange={(e) => setQuestion(e.target.value)} placeholder={currInfo.entryForms[7].example} />
+          <Textarea id="question" value={question} onChange={(e) => setQuestion(e.target.value)} placeholder={currInfo.entryForms[3].example} />
 
           <SubmitButton type="submit">{currInfo.send}</SubmitButton>
         </Form>

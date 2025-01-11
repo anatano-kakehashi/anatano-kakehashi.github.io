@@ -10,6 +10,8 @@ import {SectionDescription,
   ContentWithPaddingXl as ContentBase
 } from "assets/styles/TailwindComponents.jsx";
 
+import { useNavigate } from 'react-router-dom';
+
 import { startJourneyInfo } from "assets/ak-data/AK_Info";
 
 const PrimaryBackgroundContainer = styled.div`
@@ -26,15 +28,27 @@ const Heading = tw(MainHeadingTemplate)`font-openSans lg:text-left leading-tight
 const Description = tw(SectionDescription)`tracking-wide font-roboto text-gray-100 font-light text-left
 md:mt-4 mx-auto lg:mx-0 lg:max-w-lg`;
 
-const PrimaryButton = tw(PrimaryButtonBase)`font-roboto text-sm sm:text-base 
+const PrimaryButton = tw(PrimaryButtonBase)`font-roboto text-sm sm:text-base cursor-pointer
 mt-6 md:mt-8 md:py-4 md:px-6 
 bg-main-yellow inline-block hocus:bg-main-backgroundYellow rounded-full`;
 
 var currInfo = startJourneyInfo[0];
 export default function StartJourneyHero(props) {
   if(props.language === "ENG"){
-      currInfo = startJourneyInfo[1];
+    currInfo = startJourneyInfo[1];
   }
+  const navigate = useNavigate();
+  const trialLessonFormJap = [ 
+    <PrimaryButton as="a" onClick={() => navigate('/trialLesson')}>
+      {currInfo.Button}
+    </PrimaryButton>
+  ];
+  const trialLessonFormEng = [ 
+    <PrimaryButton as="a" onClick={() => navigate('/eng/trialLesson')}>
+      {currInfo.Button}
+    </PrimaryButton>
+  ];
+
   return (
     <PrimaryBackgroundContainer>
       <Container>
@@ -43,7 +57,7 @@ export default function StartJourneyHero(props) {
             <Heading>{currInfo.Heading}</Heading>
             <Description>{currInfo.Description1}</Description>
             <Description tw="text-main-yellow tracking-widest">{currInfo.Description2}</Description>
-            <PrimaryButton as="a" href={'mailto:anatano.koki@gmail.com'}>{currInfo.Button}</PrimaryButton>
+            {props.language === "JP" ? trialLessonFormJap : trialLessonFormEng}
           </TextColumn>
         </Row>
       </Container>

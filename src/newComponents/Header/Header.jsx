@@ -130,12 +130,12 @@ export default function Header(props) {
       <NavLink onClick={() => navigate(currNavPath+"feedback")}>{currNavLink[3]}</NavLink>
       <NavLink onClick={() => navigate(currNavPath+"faq")}>{currNavLink[4]}</NavLink>
     </NavLinks>,
-    // <NavLinks key={2}>
-    //   <PrimaryLink onClick={() => navigate(currNavPath+"contact")}>
-    //     <EmailIcon tw="w-6 h-6 inline mr-4" />
-    //     {currNavLink[5]}
-    //   </PrimaryLink>
-    // </NavLinks>
+    <NavLinks key={2}>
+      <PrimaryLink onClick={() => navigate(currNavPath+"contact")}>
+        <EmailIcon tw="w-6 h-6 inline mr-4" />
+        {currNavLink[5]}
+      </PrimaryLink>
+    </NavLinks>
   ];
 
   return (

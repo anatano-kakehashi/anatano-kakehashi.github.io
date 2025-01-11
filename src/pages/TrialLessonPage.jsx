@@ -6,7 +6,7 @@ import Header from "newComponents/Header/Header.jsx";
 import Footer from "newComponents/Footer/Footer.jsx";
 
 import Hero from "newComponents/ContactUs/1_Hero.jsx";
-import ContactUs from "newComponents/ContactUs/ContactUsForm.jsx";
+import TrialLessonForm from "newComponents/ContactUs/TrialLessonForm.jsx";
 import StartJourney from 'newComponents/Home/StartJourney.jsx';
 
 export default function FaqPage(props){
@@ -15,7 +15,7 @@ export default function FaqPage(props){
     <AnimationRevealPage>
       <Header language = {props.language} />
       <Hero language = {props.language} />
-      <ContactUs language = {props.language} />
+      <TrialLessonForm language = {props.language} />
       <Footer language = {props.language}/>
     </AnimationRevealPage>
   );

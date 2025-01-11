@@ -969,10 +969,27 @@ export const faqInfo = [
   }
 ]
 
-
-export const contactUsForm = [
+export const contactForm = [
   {
     heading: "お問い合わせ",
+    nav: [
+      "体験レッスン応募",
+      "その他お問い合わせ"
+    ]
+  },
+  {
+    heading: "Contact Us",
+    nav: [
+      "Trial Lesson",
+      "Contact Us"
+    ]
+  }
+]
+
+export const trialLessonForm = [
+  {
+    description: "こちらは「あなたの架け橋」の体験レッスン応募のお問い合わせフォームです。体験レッスンに応募したい方はこちらのフォームを記入して下さい。",
+    subHeading: "体験レッスン応募フォーム",
     required: "必須",
     send: "送信",
     successResponse: "お問い合わせありがとうございます！",
@@ -1022,7 +1039,8 @@ export const contactUsForm = [
     ]
   },
   {
-    heading: "Contact Us",
+    description: "This is the inquiry form to apply for a trial lesson at “Anatano Kakehashi”. Please fill out this form if you would like to apply for a trial lesson.",
+    subHeading: "Trial Lesson Registration",
     required: "Required",
     send: "Send",
     successResponse: "Thank you for your inquiry!",
@@ -1064,6 +1082,67 @@ export const contactUsForm = [
       {
         entry: "What is the student's reason or purpose for wanting to learn programming?",
         example: "I wanted my child to learn because I thought it would be a field that he would definitely need for college, employment, etc."
+      },
+      {
+        entry: "Please fill in any questions you would like to ask.",
+        example: ""
+      }
+    ]
+  }
+]
+
+export const contactUsForm = [
+  {
+    description: "こちらは「あなたの架け橋」の講師へのご質問・ご相談フォームです。質問などお気軽にお問い合わせください！",
+    subHeading: "ご質問・ご相談フォーム",
+    required: "必須",
+    send: "送信",
+    successResponse: "お問い合わせありがとうございます！",
+    errorResponse: "フォルムが送信されませんでした。もう一度お願いします！",
+    entryForms: [
+      {
+        entry: "名前（生徒）",
+        example: "例：山田太郎"
+      },
+      {
+        entry: "メールアドレス",
+        example: "例：user@example.jp"
+      },
+      {
+        entry: "どうやってプログラミング授業の事をお聞きになりましたか？",
+        example: "選択してください",
+        options: [
+          "My Tutors Community", "オンラインサイト（ビビナビ、Jungle City)", "お知り合い", "その他"
+        ]
+      },
+      {
+        entry: "お聞きしたい質問があれば、記入して下さい。",
+        example: ""
+      }
+    ]
+  },
+  {
+    description: "This is the form to ask any questions / discuss with the tutors at “Anatano Kakehashi”. Please fill out this form and we will get back to you as soon as possible!",
+    subHeading: "Inquiries Form",
+    required: "Required",
+    send: "Send",
+    successResponse: "Thank you for your inquiry!",
+    errorResponse: "The form was not sent. Please try again!",
+    entryForms: [
+      {
+        entry: "Name (Student)",
+        example: "Example: Taro Yamada"
+      },
+      {
+        entry: "Email Address",
+        example: "Example: user@example.jp"
+      },
+      {
+        entry: "How did you find us?",
+        example: "Please select：",
+        options: [
+          "My Tutors Community", "Online Forum (Vivinabi, Jungle City, etc.)", "Word of mouth", "Others"
+        ]
       },
       {
         entry: "Please fill in any questions you would like to ask.",

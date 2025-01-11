@@ -5,11 +5,13 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 /* ========= importing assets ============ */
 import {MainHeading as HeadingTitleTemplate, 
-    MainParagraph as MainParagraphTemplate,
-    PrimaryButton as PrimaryButtonTemplate,
-    Container as ContainerTemplate,
-    ContentWithPaddingXl as PaddingContainer
-  } from "assets/styles/TailwindComponents.jsx";
+  MainParagraph as MainParagraphTemplate,
+  PrimaryButton as PrimaryButtonTemplate,
+  Container as ContainerTemplate,
+  ContentWithPaddingXl as PaddingContainer
+} from "assets/styles/TailwindComponents.jsx";
+
+import { useNavigate } from 'react-router-dom';
 
 /* ======== importing some data for text =========== */
 import { home_hero } from "assets/ak-data/AK_Info.jsx";
@@ -34,23 +36,33 @@ md:px-2 lg:px-4 my-4 lg:my-8`;
 
 const PrimaryAction = tw(PrimaryButtonTemplate)`rounded-full md:px-12 md:py-5 
 text-main-white font-roboto font-extrabold shadow transition duration-300 
-bg-main-blue hocus:bg-main-lighterBlue hocus:text-main-white focus:outline-none focus:shadow-outline`;
+bg-main-blue hocus:bg-main-lighterBlue hocus:text-main-white focus:outline-none focus:shadow-outline cursor-pointer`;
 
 var currInfo = home_hero[0];
 export default function Home_Hero(props) {
   if(props.language === "ENG"){
-      currInfo = home_hero[1];
+    currInfo = home_hero[1];
   }
+  const navigate = useNavigate();
 
+  const trialLessonFormJap = [ 
+    <PrimaryAction as="a" onClick={() => navigate('/trialLesson')}>
+      {currInfo.PrimaryAction}
+    </PrimaryAction>
+  ];
+  const trialLessonFormEng = [ 
+    <PrimaryAction as="a" onClick={() => navigate('/eng/trialLesson')}>
+      {currInfo.PrimaryAction}
+    </PrimaryAction>
+  ];
+  
   return (
     <Container tw="md:py-6">
       <HeroContainer>
         <Content>
           <Heading>{currInfo.Heading}</Heading>
           <Paragraph tw="pb-2 md:pb-4">{currInfo.Paragraph}</Paragraph>
-          <PrimaryAction as="a" href={'mailto:anatano.koki@gmail.com'}>
-            {currInfo.PrimaryAction}
-          </PrimaryAction>
+          {props.language === "JP" ? trialLessonFormJap : trialLessonFormEng}
         </Content>
       </HeroContainer>
     </Container>
