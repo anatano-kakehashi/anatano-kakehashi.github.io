@@ -13,7 +13,7 @@ import ContactPage from "pages/ContactPage.jsx";
 
 import ScrollToTop from "helpers/scrollToTop";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
 

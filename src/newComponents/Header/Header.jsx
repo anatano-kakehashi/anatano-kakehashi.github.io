@@ -92,7 +92,7 @@ export default function Header(props) {
     <LanguageChangeContainer>
       <LanguageChange onClick={() => {
           navigate("/eng/" + currPath);
-          navigate(0);
+          window.location.reload();
         }}>
         <GlobeIcon tw="w-6 h-6" />
         &nbsp;English
@@ -103,7 +103,7 @@ export default function Header(props) {
     <LanguageChangeContainer>
       <LanguageChange onClick={() => {
           navigate("/" + currPath);
-          navigate(0);
+          window.location.reload();
         }}>
         <GlobeIcon tw="w-6 h-6" />
         &nbsp;日本語

@@ -18,7 +18,7 @@ const Container = tw(BaseContainer)`py-0 px-6 lg:px-0`;
 
 const Row = tw(ContentFormatted2)`flex flex-col bg-main-lightestBlue 
 justify-between items-center 
-lg:my-12 lg:py-12 mx-auto rounded-3xl`;
+my-6 lg:my-12 py-6 lg:py-12 mx-auto rounded-3xl`;
 
 const Form = tw.form`flex flex-col w-11/12 lg:w-4/5 py-6 lg:py-12 text-sm md:text-base lg:text-lg xl:text-xl`;
 const Label = tw.label`font-semibold mt-8 mb-3 first:mt-0 pr-4 lg:pr-0`;

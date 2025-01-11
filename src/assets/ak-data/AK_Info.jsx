@@ -844,9 +844,9 @@ export const faqInfo = [
           priceSuffix: "/レッスン",
           courses:[
             {
-              heading: "１：３のグループ",
+              heading: "1:3のグループ",
               stdPriceHeading: "レッスン1回分",
-              stdPrice: "$40"
+              stdPrice: "$45"
             },
             {
               heading: "1:1のマンツーマン",
@@ -931,7 +931,7 @@ export const faqInfo = [
             {
               heading: "1:3 Group",
               stdPriceHeading: "1 lesson",
-              stdPrice: "$40"
+              stdPrice: "$45"
             },
             {
               heading: "1:1 Individual",
