@@ -23,7 +23,7 @@ export const home_hero = [
           あなたの頼れる先輩プログラマーとして、皆にコンピューターサイエンスを教え、サポートする事に全力を注いでいます。また、プログラミング以外の大学・社会に関する事などもアドバイスします。私と一緒に学び、成長し、プログラミングを楽しむ旅をあなたも始めましょう！
         </>
     ),
-    PrimaryAction:"初回無料レッスンを受けよう！"
+    PrimaryAction:"初回レッスンを受けよう！"
   },
   {
     Heading:(
@@ -38,7 +38,7 @@ export const home_hero = [
         As your go-to coding buddy and attentive mentor, I'm all about helping students understand computer science and supporting their journey navigating through both academia and industry. Get ready for a journey of learning, growing, and having a blast together!
       </>
   ),
-    PrimaryAction:"Schedule a Free Lesson!"
+    PrimaryAction:"Schedule your First Lesson!"
   }
 ];
 
@@ -116,16 +116,16 @@ export const startJourneyInfo = [
     Description1: "もしあなたがコンピューターサイエンスに対して怖気づいたり、まだ学ぶには早いと感じたりしているなら、心配しないで下さい！私も５年前は素人でしたが、今ではエンジニアとして働いています。あなたの旅は始まったばかりで、きっと素晴らしいものになるでしょう！",
     Description2: (
       <>
-        初回のレッスンは無料なので、<HiddenBr />気軽にメッセージをください！
+        初回のレッスンは＄２０なので、<HiddenBr />気軽にメッセージをください！
       </>
     ),
-    Button: "初回無料レッスンを受けよう！"
+    Button: "初回レッスンを受けよう！"
   },
   {
     Heading: "Start Your Journey",
     Description1: "If you're feeling intimidated by Computer Science or feel like you aren't prepared to learn, just remember, I started from scratch too, and look where I am now. Your journey is just beginning, and it's going to be a fantastic ride!",
-    Description2: "The first lesson will be free, so feel free to message me casually!",
-    Button: "Schedule a Free Lesson"
+    Description2: "The first lesson will be cheaper at $20, so feel free to message me casually!",
+    Button: "Schedule your First Lesson!"
   }
 ];
 
@@ -178,6 +178,91 @@ export const testimonials = [
       customerTitle: "Student C's Parent"
     }
   ]
+]
+
+export const new_testimonials = [
+  {
+    heading: "ご利用者の声",
+    learnMore: "もっと見る",
+    reviews: [
+      {
+        quote:
+          "レッスンはとても楽しく魅力的で、内容はとても簡潔で理解しやすかったです。レッスンのお陰で、学校の授業で本当に役立ちました。",
+        stars: 5
+      },
+      {
+        quote:
+          "初心者からでしたが丁寧に個人レッスンをして頂きありがたかったです。更にグループレッスンをしたりと意見を良い合えたり他の人の良い所悪い所を良い合えたりインプットとアウトプットが出来た事はかなり良かったのではないかと思います。",
+        stars: 5
+      },
+      {
+        quote:
+          "レッスンスライドだけでなく、実際のプログラミングアクティビティもとても役に立ちました。アクティビティを通して、他の方法では知り得なかったコツやスキルを得ることができました。",
+        stars: 5
+      },
+      {
+        quote:
+          "色々先生とプログラミング以外の事でも会話する事があるようで、これからの人生の事とか先が見えない不安などがある年頃なので、参考になる様な会話も出来るところなどが良いと感じました。",
+        stars: 4
+      },
+      {
+        quote:
+          "いつも子供が喜んで授業に参加している姿を目の当たりにしています。全てに満足して、感謝しています。",
+        stars: 5
+      },
+      {
+        quote:
+          "宿題を提出させていただいた際もとてもキメ細かくみて下さっている点に満足しています。現地校での授業がとても簡単に感じるようになっています。",
+        stars: 5
+      },
+      {
+        quote:
+          "勉強になるし、時間もそんなに取られない。レッスンも楽しいし、学んだことは使えるので学べて本当に良かった。",
+        stars: 4
+      }
+    ]
+  },
+  {
+    heading: "Feedback",
+    learnMore: "See more",
+    reviews: [
+      {
+        quote:
+          "The lessons were very fun and engaging, and the content was very concise and easy to understand! These aspects really helped me in my courses at school.",
+        stars: 5
+      },
+      {
+        quote:
+          "Despite my daughter being a beginner at programming, I really appreciated how careful and helpful the teacher was. Additionally, the group lessons were amazing, because my daughter was able to share opinions and learn from one another!",
+          stars: 5
+      },
+      {
+        quote:
+          "The lesson slides as well as the actual programming activities were very useful. Through the activities, I was able to gain tips and skills that I would not have otherwise known.",
+        stars: 5
+      },
+      {
+        quote:
+          "I felt that it was good that they could have conversations with the teachers about things other than programming, which would be helpful to them since they are at an age when they are anxious about their future lives and cannot see what the future holds.",
+        stars: 4
+      },
+      {
+        quote:
+          "I always see my children happy and participating in the classes. I am satisfied and grateful for everything.",
+        stars: 5
+      },
+      {
+        quote:
+          "I am satisfied with the attention to detail when I submit my homework. I feel that the classes at the local school are very easy.",
+        stars: 5
+      },
+      {
+        quote:
+          "I learn a lot and it doesn't take up much time. The lessons are fun and I'm really glad I learned because I can use what I learned.",
+        stars: 4
+      }
+    ]
+  }
 ]
 
 // why learn CS related information
@@ -558,12 +643,37 @@ export const services_Hero = [
 export const services_Roadmap = [
   [
     {
+      Heading: "Minecraft 入門",
+      SubHeading1: "推定時間：",
+      SubHeading2: "週1回受講の場合、〜1年",
+      Paragraph: (
+      <>
+        Minecraft Educationは、プログラミング学習のための魅力的なプラットフォームであり、創造性とコーディングスキルが花開くユニークでインタラクティブな環境を提供します。世界中に数百万人のプレイヤーを持つMinecraftは、体験を通してプログラミングの重要な概念を紹介する優れた媒体として役立ちます。
+      </>),
+      WhatTeach: "何を教えるか：",
+      WhatTeachParagraph: "Minecraftの没入感のあるインタラクティブな世界を使って、プログラミングの基本的な概念をすべてカバーします。Minecraftの魅力的な環境を活用することで、コーディングの原則の強固な基礎を確立し、将来より複雑なトピックを把握しやすくします。このコースは、ゲーム開発、MOD、そしてその先の様々な高度なコンセプトへの準備となります。",      
+      WhyImportant: "なぜ重要なのか：",
+      WhyImportantParagraph: "マインクラフトを通してコードを学ぶことは、楽しいだけでなく、非常に価値のあることです。Minecraftのユニークなプラットフォームは、魅力的で親しみやすい環境でプログラミングの概念を実践的に応用することを可能にします。Minecraftでコーディングすることで、創造性を刺激し、問題解決能力を高め、将来の学習のための強固な基礎を築くことができます。ゲーム開発、ソフトウェアエンジニアリング、技術革新など、さまざまな分野でプログラミングが広く使われている今、Minecraftを通じてこれらのスキルを習得すれば、キャリアを有利に進め、多くのチャンスを広げることができます。",
+      SkillsObtained: "身につくスキル：",
+      Skills: [
+        (<>
+          プログラミング /<br/>
+          アルゴリズムの基礎
+        </>),
+        "基本的なデータ構造の理解",
+        (<>
+          オブジェクト指向<br/>
+          プログラミング
+        </>)
+      ]
+    },
+    {
       Heading: "Python 入門",
       SubHeading1: "推定時間：",
       SubHeading2: "週1回受講の場合、〜1年",
       Paragraph: (
       <>
-        Pythonは初心者に優しいプログラミング言語でありながら、<HiddenBrLgXl/>非常に汎用性が高い。<HiddenBr/>実際、世界中のプログラマーの50％がPythonを<HiddenBr/>利用しています。
+        Pythonは初心者に優しいプログラミング言語でありながら、非常に汎用性が高い。実際、世界中のプログラマーの50％がPythonを利用しています。
       </>),
       WhatTeach: "何を教えるか：",
       WhatTeachParagraph: "Pythonはそのシンプルさと読みやすさで知られる初心者に優しいプログラミング言語なので、Pythonを通してプログラミングの基本的な概念をすべてカバーします。これを通して、将来ウェブ開発やゲーム開発など様々なコンセプトを学ぶための基礎を固めます。",      
@@ -593,7 +703,7 @@ export const services_Roadmap = [
       WhyImportantParagraph: "GitHubを利用する事で複数のプログラマーが、衝突することなく同時に同じプロジェクトに取り組むことができます。それはまるで、クラスのプロジェクトで友達と同じ google ドキュメントで作業するようなものです。また、GitHubでチームの課題を効率的に管理し、優先順位をつけることもできます。これにより、プロジェクトを整理し、重要な問題を確実に対処することができます。多くの企業、特にTech業界では、コードの管理にGitHubを使っています。実際、Fortune 100企業の90%以上がGitHubを使っているため、GitHubの効果的な使い方を知っていることは、ソフトウェア開発の仕事を探す上で貴重なスキルです。",
       SkillsObtained: "身につくスキル：",
       Skills: [
-        (<>チーム・コラボレーション用の<HiddenBr/>Gitとバージョン<HiddenBrLgXl />管理の基礎</>),
+        (<>チーム・コラボレーション用の<HiddenBr/>Gitとバージョン管理の基礎</>),
         (<>プロジェクト管理の基礎</>),
         (<>Githubページで<br />ウェブサイトを公開</>)
       ]
@@ -617,6 +727,22 @@ export const services_Roadmap = [
     }
   ] ,
   [
+    {
+      Heading: "Minecraft Education",
+      SubHeading1: "Estimated Time:",
+      SubHeading2: "~1 year if taking courses once a week",
+      Paragraph: "Minecraft Education is an engaging platform for learning programming, providing a unique, interactive environment where creativity and coding skills flourish. With millions of players worldwide, Minecraft serves as an excellent medium for introducing key programming concepts through hands-on experience.",
+      WhatTeach: "What Will I Teach:",
+      WhatTeachParagraph: "Using the immersive and interactive world of Minecraft, I will cover all the fundamental concepts of programming. By leveraging Minecraft's engaging environment, we will establish a solid foundation in coding principles, making it easier to grasp more complex topics in the future. This course will prepare you for various advanced concepts such as game development, modding, and beyond.",      
+      WhyImportant: "Why is it Important:",
+      WhyImportantParagraph: "Learning to code through Minecraft is not only fun but also incredibly valuable. Minecraft's unique platform allows for the practical application of programming concepts in an engaging and familiar environment. Coding in Minecraft can spark creativity, enhance problem-solving skills, and provide a strong foundation for future learning. With the widespread use of programming in various fields such as game development, software engineering, and technology innovation, mastering these skills through Minecraft will give you a head start in your career and open up numerous opportunities.",
+      SkillsObtained: "Skills You Will Obtain:",
+      Skills: [
+        "Basics of programming concepts, algorithms, and problem-solving",
+        (<>Understanding fundamental <HiddenBr/>data structures</>),
+        (<>Introduction to Object <HiddenBr/>Oriented Programming</>)
+      ]
+    },
     {
       Heading: "Intro to Python",
       SubHeading1: "Estimated Time:",
@@ -670,3 +796,279 @@ export const services_Roadmap = [
 ];
 
 
+// faq
+export const faqInfo = [
+  {
+    heading: "よくあるご質問",
+    subHeaders:[
+      "レッスンについて",
+      "料金について",
+      "入塾について"
+    ],
+    lesson:[
+      {
+        question: "体験レッスンはやっていますか？",
+        answer: "はい、1時間＄２０で受講できます。気軽にご連絡して下さい。"
+      },
+      {
+        question: "レッスン形態について教えてください。",
+        answer: (<>主に1:3のグループ・オンラインレッスン構成です。1:1の完全マンツーマンも可能です（値段は変わりますが）。<HiddenBrSm/>
+                毎週のレッスン回数は週1回以上お好きな回数に出来ます。<HiddenBrSm/>
+                1回のレッスン時間は1時間３０分です。<HiddenBrSm/>
+                時間帯はグループの皆さんの都合が良い時間帯を選ばせて頂きます。
+                </>)
+      },
+      {
+        question: "振替はできますか？",
+        answer: (<>レッスン日の２日前までにご連絡いただければ後日振替が可能です。<HiddenBrSm/>
+                振替は次の月のレッスン代に振り込まれます。
+                </>)
+      }
+    ],
+    price:[
+      {
+        question: "体験レッスンはいくらでしょうか？",
+        answer: "対面レッスンは1時間＄２０になります。"
+      },
+      {
+        question: "授業料はいくらでしょうか？",
+        answer: "今現在の基本料金は以下の通りです。",
+
+        onlineTable: {
+          heading: (<>オンライン<HiddenBr/>レッスン</>),
+          keyNote: [
+            "※レッスン作成費の$10/月が含まれます",
+            "※週の時間数によってご料金が異なります",
+            "※レッスンは1回１時間３０分です"
+          ],
+          priceSuffix: "/レッスン",
+          courses:[
+            {
+              heading: "１：３のグループ",
+              stdPriceHeading: "レッスン1回分",
+              stdPrice: "$40"
+            },
+            {
+              heading: "1:1のマンツーマン",
+              stdPriceHeading: "レッスン1回分",
+              stdPrice: "$100"
+            }
+          ]
+        }
+      },
+      {
+        question: "日頃の相談は料金がかかりますか？",
+        answer: (<>大学のエッセイ対策、履歴書や仕事・インターンの対策などは授業料と同じ料金を頂きます。<HiddenBrSm/>それ以外の頃の相談は一切料金はかかりません。気軽にご相談ください。
+                </>)
+      },
+      {
+        question: "授業料の支払い方法は？",
+        answer: (<>毎月Venmo・チェックでお願いしております。<HiddenBrSm/>
+          前月末か当月初めにお支払いのご連絡をさせて頂きます。
+          </>)
+      }
+    ],
+    join:[
+      {
+        question: "入塾までの流れを教えて下さい。",
+        answer: (<>まずは<a href="mailto:anatano.koki@gmail.com">メール</a>でご相談下さい。<HiddenBrSm/>
+          ご希望であれば、体験レッスン(1時間＄２０)や塾長との面談(無料)ができますのでご利用下さい。<HiddenBrSm/>
+          その後、レッスン日時と講師が決まり次第レッスン開始になります。
+          </>)
+      },
+      {
+        question: "入会金はいくらでしょうか？",
+        answer: "現在、入会金は0円です。"
+      }
+    ]
+  },
+  {
+    heading: "FAQs",
+    subHeaders:[
+      "About Lessons",
+      "About Pricing",
+      "About Enrollment"
+    ],
+    lesson:[
+      {
+        question: "Do you offer trial lessons?",
+        answer: "Yes, you can take a trial lesson for $20 per hour.You can easily apply by sending an email."
+      },
+      {
+        question: "Please tell me about the lesson formats.",
+        answer: (<>It’s primarily a one-on-three group / remote lesson format. But if desired, we also offer one-on-one lessons.<HiddenBrSm/>
+                You can schedule lessons at least once a week, and you can choose the frequency that suits you best.<HiddenBrSm/>
+                Each lesson is 1hr 30min. The lesson timeslot will be selected based on the best time for all students in the group.
+                </>)
+      },
+      {
+        question: "Can I reschedule lessons?",
+        answer: (<>If you contact us at least 2 days before the lesson, you can reschedule for a later date.<HiddenBrSm/>
+                If the lesson is rescheduled, the lesson will be credited for the following month.
+                </>)
+      }
+    ],
+    price:[
+      {
+        question: "How much is the trial lesson?",
+        answer: "The trial lesson will be $20 for one hour."
+      },
+      {
+        question: "How much is the tuition fee?",
+        answer: "The current base fees are as follows.",
+
+        // add code for table
+        
+        onlineTable: {
+          heading: (<>Online<HiddenBr/>Lessons</>),
+          priceSuffix: "/ Lesson",
+          keyNote: [
+            "※There will be a lesson creation fee of $10 that is charged each month",
+            "※Rates vary depending on the number of hours per week",
+            "※Each lesson is 1hr 30min long"
+          ],
+          courses:[
+            {
+              heading: "1:3 Group",
+              stdPriceHeading: "1 lesson",
+              stdPrice: "$40"
+            },
+            {
+              heading: "1:1 Individual",
+              stdPriceHeading: "1 lesson",
+              stdPrice: "$100"
+            }
+          ]
+        }
+      },
+      {
+        question: "Are there any fees for regular consultations?",
+        answer: (<>Consultations / advice in regards to college applications or job/internship applications & resume prep will incur the same fees as the regular tuition.  <HiddenBrSm/> Outside of this, consultations / advice will be completely free of charge. Please feel free to reach out with any questions. 
+                </>)
+      },
+      {
+        question: "What are the payment methods for tuition fees?",
+        answer: (<> We ask that payments be made via venmo / check each month. <HiddenBrSm/>
+         We will notify you at the end of the previous month or at the beginning of the current month if the payment has not been made.
+          </>)
+      }
+    ],
+    join:[
+      {
+        question: "Please tell me the process for enrollment.",
+        answer: (<>First, please let us know your requests by <a href="mailto:anatano.koki@gmail.com">email</a>. <HiddenBrSm/>
+          If you wish, you can take a trial lesson (1 hour for $20) or have a meeting with the director (free of charge).<HiddenBrSm/>
+          After that, lessons will start as soon as the schedule and instructor are determined.
+          </>)
+      },
+      {
+        question: "How much is the enrollment fee?",
+        answer: "Currently, the enrollment fee is 0 yen."
+      }
+    ]
+  }
+]
+
+
+export const contactUsForm = [
+  {
+    heading: "お問い合わせ",
+    required: "必須",
+    send: "送信",
+    successResponse: "お問い合わせありがとうございます！",
+    errorResponse: "フォルムが送信されませんでした。もう一度お願いします！",
+    entryForms: [
+      {
+        entry: "名前（生徒）",
+        example: "例：山田太郎"
+      },
+      {
+        entry: "メールアドレス",
+        example: "例：user@example.jp"
+      },
+      {
+        entry: "どうやってプログラミング授業の事をお聞きになりましたか？",
+        example: "選択してください",
+        options: [
+          "My Tutors Community", "オンラインサイト（ビビナビ、Jungle City)", "お知り合い", "その他"
+        ]
+      },
+      {
+        entry: "授業の構図はどれが希望で宜しいでしょうか？",
+        example: "選択してください",
+        options: [
+          "１：１のマンツーマン", "１：３のグループレッスン"
+        ]
+      },
+      {
+        entry: "生徒はどの分野に当てはまりますか？",
+        example: "選択してください",
+        options: [
+          "社会人", "大学生", "高校生", "中学生", "小学生"
+        ]
+      },
+      {
+        entry: "生徒は過去にプログラミングの勉強をした事はありますか？",
+        example: "はい、少し学校で勉強しました。"
+      },
+      {
+        entry: "生徒がプログラミングを学びたい理由、または目的はなんですか？",
+        example: "大学や就職等必ず必要になる分野ではないかと思い学ばせたいと思いました。"
+      },
+      {
+        entry: "お聞きしたい質問があれば、記入して下さい。",
+        example: ""
+      }
+    ]
+  },
+  {
+    heading: "Contact Us",
+    required: "Required",
+    send: "Send",
+    successResponse: "Thank you for your inquiry!",
+    errorResponse: "The form was not sent. Please try again!",
+    entryForms: [
+      {
+        entry: "Name (Student)",
+        example: "Example: Taro Yamada"
+      },
+      {
+        entry: "Email Address",
+        example: "Example: user@example.jp"
+      },
+      {
+        entry: "How did you find us?",
+        example: "Please select：",
+        options: [
+          "My Tutors Community", "Online Forum (Vivinabi, Jungle City, etc.)", "From a friend", "Others"
+        ]
+      },
+      {
+        entry: "What is your desired lesson structure?",
+        example: "Please select：",
+        options: [
+          "１：１ individual", "１：３ group"
+        ]
+      },
+      {
+        entry: "Which of the following areas does the student fit into?",
+        example: "Please select：",
+        options: [
+          "working adult", "college student", "high school student", "middle school student", "elementary school student"
+        ]
+      },
+      {
+        entry: "Has the student studied programming in the past?",
+        example: "Yes, I studied at school a little."
+      },
+      {
+        entry: "What is the student's reason or purpose for wanting to learn programming?",
+        example: "I wanted my child to learn because I thought it would be a field that he would definitely need for college, employment, etc."
+      },
+      {
+        entry: "Please fill in any questions you would like to ask.",
+        example: ""
+      }
+    ]
+  }
+]

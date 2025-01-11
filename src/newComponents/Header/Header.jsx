@@ -13,6 +13,7 @@ import logo from "assets/ak-images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { ReactComponent as GlobeIcon } from "feather-icons/dist/icons/globe.svg";
+import { ReactComponent as EmailIcon } from "feather-icons/dist/icons/mail.svg";
 
 const HeaderComponent = tw.header`
   flex justify-between items-center
@@ -43,6 +44,13 @@ const LogoLink = styled(NavLink)`
 const LogoText = tw.p`text-left text-lg lg:text-2xl font-roboto text-main-blue tracking-[.15em] font-bold`;
 const LogoRedText = tw.span`text-main-red`;
 
+const PrimaryLink = tw(NavLink)`
+  lg:mx-0 p-4 lg:mb-2
+  rounded-xl bg-main-blue text-gray-100
+  hocus:bg-main-lightBlue hocus:text-gray-200 focus:shadow-outline
+  border-b-0
+`;
+
 const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-between`;
 const NavToggle = tw.button`
   lg:hidden pr-8 z-70 focus:outline-none hocus:text-main-blue transition duration-300
@@ -60,8 +68,8 @@ const DesktopNavLinks = tw.nav`
 const LgDesktopNav = tw(DesktopNavLinks)`hidden lg:flex lg:flex-wrap lg:pt-8 lg:px-8 xl:px-0 justify-center`;
 
 var currPath = "/";
-var engNav = ["Why Learn", "About Me", "Service"];
-var japNav = ["学ぶメリット", "私について", "サービス"];
+var engNav = ["Why Learn", "About Me", "Service", "Feedback", "FAQ", "Contact Us"];
+var japNav = ["学ぶメリット", "私について", "サービス", "ご利用者の声", "FAQ", "お問い合わせ"];
 export default function Header(props) {
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const navigate = useNavigate();
@@ -119,7 +127,15 @@ export default function Header(props) {
       <NavLink onClick={() => navigate(currNavPath+"whyLearn")}>{currNavLink[0]}</NavLink>
       <NavLink onClick={() => navigate(currNavPath+"aboutMe")}>{currNavLink[1]}</NavLink>
       <NavLink onClick={() => navigate(currNavPath+"service")}>{currNavLink[2]}</NavLink>
-    </NavLinks>
+      <NavLink onClick={() => navigate(currNavPath+"feedback")}>{currNavLink[3]}</NavLink>
+      <NavLink onClick={() => navigate(currNavPath+"faq")}>{currNavLink[4]}</NavLink>
+    </NavLinks>,
+    // <NavLinks key={2}>
+    //   <PrimaryLink onClick={() => navigate(currNavPath+"contact")}>
+    //     <EmailIcon tw="w-6 h-6 inline mr-4" />
+    //     {currNavLink[5]}
+    //   </PrimaryLink>
+    // </NavLinks>
   ];
 
   return (

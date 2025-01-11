@@ -7,7 +7,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 /* ========= importing assets ============ */
 import {
     MainHeading2 as HeadingTitleTemplate,
-    LargerMainParagraph as LargerMainParagraphTemplate
+    LargerMainParagraph as LargerMainParagraphTemplate,
+    ContentWithPaddingXl as ContentTemplate
 } from "assets/styles/TailwindComponents.jsx";
 
 import { testimonials } from "assets/ak-data/AK_Info";
@@ -23,13 +24,11 @@ import girl_test1 from "assets/ak-images/testimonials/girl_test1.png";
 import girl_test2 from "assets/ak-images/testimonials/girl_test2.png";
 import girl_test3 from "assets/ak-images/testimonials/girl_test3.png";
 
-
 import "slick-carousel/slick/slick.css";
 
 const Container = tw.div`relative bg-main-lightestBlue`;
-const Content = tw.div`lg:max-w-screen-xl mx-auto py-16 md:py-24`;
+const Content = tw(ContentTemplate)`mx-auto pt-12 pb-4 lg:py-20`;
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
-const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
 const HeadingTitle = tw(HeadingTitleTemplate)`font-openSans lg:tracking-[3.6px] text-main-blue font-extrabold`;
 
 const TestimonialSliderContainer = tw.div`mt-6 md:mt-16 md:px-4`;
@@ -39,9 +38,9 @@ const SpaceContainer = styled.div`w-1/12`;
 const ImageContainer = styled.div`
   ${tw`
   w-3/12 
-  rounded-l-3xl flex flex-col gap-y-4 
-  py-6 md:py-8 lg:py-12
-  items-center max-w-xs md:max-w-none bg-main-lightBlue`}
+  rounded-l-3xl flex flex-col gap-y-1 md:gap-y-4 
+  md:py-8 lg:py-12
+  items-center justify-center max-w-xs md:max-w-none bg-main-lightBlue`}
   img {
     ${tw`rounded-full bg-main-white
     w-[75px] h-[75px]
@@ -53,22 +52,22 @@ const ImageContainer = styled.div`
 `;
 const TextContainer = tw.div`
 w-7/12 rounded-r-3xl 
-py-6 md:py-8 lg:py-12 flex flex-col flex items-center justify-center bg-main-white`;
-const QuoteContainer = tw.div`relative p-6 md:p-8 lg:p-10 mt-4 md:mt-0`;
-const Quote = tw(LargerMainParagraphTemplate)`py-4 text-left font-medium`;
+py-2 md:py-8 flex flex-col flex items-center justify-center bg-main-white`;
+const QuoteContainer = tw.div`relative p-4 md:p-8`;
+const Quote = tw(LargerMainParagraphTemplate)`md:py-4 text-left font-medium`;
 
 const CustomerInfo = tw.div`px-2 sm:px-5 lg:px-8 text-left mt-4 md:mt-0 w-full`;
 const CustomerTitle = tw(LargerMainParagraphTemplate)`font-thin text-main-white`;
 
-const QuotesLeft = tw(QuotesLeftIcon)`w-8 h-8 lg:w-10 lg:h-10 ml-4 text-main-lightBlue absolute top-0 left-0`;
-const QuotesRight = tw(QuotesRightIcon)`w-8 h-8 lg:w-10 lg:h-10 mr-4 text-main-lightBlue absolute bottom-0 right-0`;
+const QuotesLeft = tw(QuotesLeftIcon)`w-4 h-4 lg:w-8 lg:h-8 ml-1 lg:ml-4 text-main-lightBlue absolute top-0 left-0`;
+const QuotesRight = tw(QuotesRightIcon)`w-4 h-4 lg:w-8 lg:h-8 mr-1 lg:mr-4 text-main-lightBlue absolute bottom-0 right-0`;
 
 const SliderControlButtonContainer = styled.div`
   ${tw`absolute top-0 h-full flex items-end md:items-center z-20`}
   button {
     ${tw`rounded-full bg-main-blue text-main-white hover:text-main-lightBlue focus:outline-none transition duration-300 transform hover:scale-125 transform -translate-y-[225px] sm:-translate-y-[150px] md:translate-y-0 p-1 md:p-2`}
     svg {
-      ${tw`w-6 md:w-8`}
+      ${tw`w-4 md:w-8`}
     }
   }
 `;
@@ -95,10 +94,10 @@ var heading = "寄せられた生徒、保護者の感想";
 var currInfo = testimonials[0];
 var photos = [guy_test1, girl_test1, girl_test2, girl_test3];
 export default function TestimonialComponent(props) {
-    if(props.language === "ENG"){
-        currInfo = testimonials[1];
-        heading = "Testimonials";
-    }
+  if(props.language === "ENG"){
+    currInfo = testimonials[1];
+    heading = "Testimonials";
+  }
   
   return (
     <Container>

@@ -6,6 +6,10 @@ import HomePage from "pages/HomePage.jsx";
 import AboutPage from "pages/AboutPage.jsx";
 import WhyLearnPage from "pages/WhyLearnPage.jsx";
 import ServicesPage from "pages/ServicesPage";
+import FaqPage from "pages/FaqPage.jsx";
+import TestimonialPage from "pages/TestimonialPage.jsx";
+import ContactPage from "pages/ContactPage.jsx";
+
 import ScrollToTop from "helpers/scrollToTop";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -26,9 +30,14 @@ export default function App() {
           <Route path="/eng/aboutMe" element = {<AboutPage language = "ENG"/>} />
           <Route path="/service" element = {<ServicesPage language = "JP"/>} />
           <Route path="/eng/service" element = {<ServicesPage language = "ENG"/>} />
+          <Route path="/faq" element = {<FaqPage language = "JP"/>} />
+          <Route path="/eng/faq" element = {<FaqPage language = "ENG"/>} />
+          <Route path="/feedback" element = {<TestimonialPage language = "JP"/>} />
+          <Route path="/eng/feedback" element = {<TestimonialPage language = "ENG"/>} />
+          {/* <Route path="/contact" element = {<ContactPage language = "JP"/>} />
+          <Route path="/eng/contact" element = {<ContactPage language = "ENG"/>} /> */}
         </Routes>
       </Router>
     </>
-    
   );
 }
