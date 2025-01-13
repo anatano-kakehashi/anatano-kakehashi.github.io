@@ -28,7 +28,7 @@ import { ReactComponent as StarIconBase } from "assets/treact-images/star-icon.s
 const Container = tw(BaseContainer)`bg-main-lightestBlue py-20 lg:px-32`;
 
 const Row = tw(ContentFormatted2)`flex flex-col md:flex-row justify-between items-center mb-12 md:mb-0 w-5/6 md:w-11/12 lg:w-full
-lg:my-12 mx-auto shadow-lg rounded-3xl bg-main-white`;
+py-6 lg:py-4 lg:my-12 mx-auto shadow-lg rounded-3xl bg-main-white`;
 
 const Heading = tw(MainHeadingTemplate)`text-center text-main-blue tracking-widest py-10`;
 const ButtonRow = tw.div`flex justify-center items-center lg:my-12 mx-auto`;
@@ -58,7 +58,7 @@ const ImageContainer = styled.div`
   }
 `;
 const TextContainer = tw.div`
-w-4/5 rounded-r-3xl md:py-8 lg:py-16
+w-11/12 md:w-4/5 rounded-r-3xl md:py-8 lg:py-16
 flex flex-col flex items-center justify-center bg-main-white`;
 const QuoteContainer = tw.div`relative p-4 md:p-8`;
 const Quote = tw(LargerMainParagraphTemplate)`md:py-4 text-left font-medium`;
@@ -66,7 +66,7 @@ const QuotesLeft = tw(QuotesLeftIcon)`w-4 h-4 lg:w-8 lg:h-8 ml-1 lg:ml-4 text-ma
 const QuotesRight = tw(QuotesRightIcon)`w-4 h-4 lg:w-8 lg:h-8 mr-1 lg:mr-4 text-main-lightBlue absolute bottom-0 right-0`;
 
 const StarsContainer = styled.div``;
-const StarIcon = tw(StarIconBase)`inline-block w-3 h-3 md:w-5 md:h-5 text-orange-400 fill-current mr-1 last:mr-0`;
+const StarIcon = tw(StarIconBase)`inline-block w-4 h-4 md:w-6 md:h-6 text-orange-400 fill-current mr-1 last:mr-0`;
 
 var currInfo = new_testimonials[0];
 var currNavPath = "/";
@@ -130,6 +130,23 @@ export default function TestimonialComponent(props) {
             <QuoteContainer>
               <QuotesLeft />
               <Quote>{currInfo.reviews[2].quote}</Quote>
+              <QuotesRight />
+            </QuoteContainer>
+          </TextContainer>
+        </Row>
+        <Row >
+          <ImageContainer>
+            <Image imageSrc={feedbackBlue} />
+            <StarsContainer>
+              {Array.from({ length: currInfo.reviews[3].stars }).map((_,indexIcon) => (
+                <StarIcon key={indexIcon} />
+              ))}
+            </StarsContainer>
+          </ImageContainer>
+          <TextContainer >
+            <QuoteContainer>
+              <QuotesLeft />
+              <Quote>{currInfo.reviews[3].quote}</Quote>
               <QuotesRight />
             </QuoteContainer>
           </TextContainer>

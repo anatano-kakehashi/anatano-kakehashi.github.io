@@ -60,8 +60,8 @@ const NavLink = tw.a`
   hocus:text-main-backgroundYellow
 `;
 
-const PriceTable = tw.div`flex flex-col w-14/16 md:mx-6 my-12 border border-black`;
-const PriceHeadingContainer = tw.div`w-full text-center p-8`
+const PriceTable = tw.div`flex flex-col w-full lg:w-14/16 md:mx-6 my-12 border border-black`;
+const PriceHeadingContainer = tw.div`w-full text-center py-4 px-2 lg:p-8`
 const PriceHeading = tw(SubMainHeadingTemplate)`text-main-blue text-center`;
 const PriceKeyNote = tw(MainParagraphTemplate)`text-main-red text-center`;
 

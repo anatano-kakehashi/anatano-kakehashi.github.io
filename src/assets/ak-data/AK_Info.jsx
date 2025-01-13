@@ -186,18 +186,20 @@ export const new_testimonials = [
     learnMore: "もっと見る",
     reviews: [
       {
-        quote:
-          "レッスンはとても楽しく魅力的で、内容はとても簡潔で理解しやすかったです。レッスンのお陰で、学校の授業で本当に役立ちました。",
+        quote: "大学の専攻を変える為にプログラミングを学ぶ必要があったのですが、このレッスンのおかげで、プログラミングについて何も知らなかった私が、MATLABで難しい宿題を自力で解けるようになりました。 私が最も感銘を受けたのは、コウキ先生がどれだけ生徒のために努力しているかということです。 彼はMATLAB（本来授業で教えるコーディング言語の1つではありませんでしたが、私はコースを取らなければなりませんでした）を学び、それを私に教えるためにスライドを見つけ、編集しました。私のクラスの宿題が純粋なコーディングだけでなく、より高度な数学がたくさんあったにもかかわらず、彼はいつも私がそれを理解するのを助ける方法を見つけてくれました。 コーディング以外でも、彼はいつもキャリアについて素晴らしいアドバイスをしてくれました。 コードだけでなく、ネットワークやエンジニアの仕事全般について、彼から多くのことを学びました。",
         stars: 5
       },
       {
         quote:
-          "初心者からでしたが丁寧に個人レッスンをして頂きありがたかったです。更にグループレッスンをしたりと意見を良い合えたり他の人の良い所悪い所を良い合えたりインプットとアウトプットが出来た事はかなり良かったのではないかと思います。",
+          "娘は初心者からでしたが丁寧に個人レッスンをして頂きありがたかったです。更にグループレッスンをしたりと意見を良い合えたり他の人の良い所悪い所を良い合えたりインプットとアウトプットが出来た事はかなり良かったのではないかと思います。",
         stars: 5
       },
       {
-        quote:
-          "レッスンスライドだけでなく、実際のプログラミングアクティビティもとても役に立ちました。アクティビティを通して、他の方法では知り得なかったコツやスキルを得ることができました。",
+        quote: "すべてのレッスンが、以前に学んだことをベースにしているので、どのコンセプトも理解しやすく、より応用が効くようになっています。レッスンはとても役に立ちますし、トピックは興味深いだけでなく、実社会に役立つものばかりです。最終的に仕事の場で使える新しいスキルを学び続けるのが楽しみです！",
+        stars: 5
+      },
+      {
+        quote: "プログラミングレッスンもとてもわかり易く、他インターンのことやいろいろな面でアドバイスをくださるので、子供たちもとても満足しています。娘は全くプログラミングの経験がなくゼロからのスタートでしたが、先生の指導が良く、大学のクラスでも理解できるようになりました。息子もプログラミングの知識が増えて、アクティビティもとても勉強になっています。",
         stars: 5
       },
       {
@@ -217,8 +219,22 @@ export const new_testimonials = [
       },
       {
         quote:
+          "レッスンスライドだけでなく、実際のプログラミングアクティビティもとても役に立ちました。アクティビティを通して、他の方法では知り得なかったコツやスキルを得ることができました。",
+        stars: 5
+      },
+      {
+        quote:
           "勉強になるし、時間もそんなに取られない。レッスンも楽しいし、学んだことは使えるので学べて本当に良かった。",
         stars: 4
+      },
+      {
+        quote:
+          "レッスンはとても楽しく魅力的で、内容はとても簡潔で理解しやすかったです。レッスンのお陰で、学校の授業で本当に役立ちました。",
+        stars: 5
+      },
+      {
+        quote: "レッスンでは、わかりやすいスライドとビデオを使った素晴らしい内容で、プログラミングを学ぶ素晴らしい機会を提供してくれました！",
+        stars: 5
       }
     ]
   },
@@ -227,8 +243,7 @@ export const new_testimonials = [
     learnMore: "See more",
     reviews: [
       {
-        quote:
-          "The lessons were very fun and engaging, and the content was very concise and easy to understand! These aspects really helped me in my courses at school.",
+        quote: "I needed to learn how to code to a qualify for a major transfer and these lessons took me from not knowing the first thing about code to being able to solve difficult homework problems on my own on MATLAB.  I think what impressed me the most is how much effort Kouki puts into his students.  He learned MATLAB (which was not one of the coding languages that he taught but I had to take a course on) and found/edited slides to teach it to me, and even though my class homework wasn’t just purely coding and had a lot of higher level maths, he always found a way to help me figure it out.  Even outside of coding he always offered great advice about careers and is always so willing to help others.  I have learned so much about not only code but also networking and the engineering work field in general from him.",
         stars: 5
       },
       {
@@ -237,8 +252,11 @@ export const new_testimonials = [
           stars: 5
       },
       {
-        quote:
-          "The lesson slides as well as the actual programming activities were very useful. Through the activities, I was able to gain tips and skills that I would not have otherwise known.",
+        quote: "I really appreciate how everything I learn builds on what we've previously learned from the lessons, making every concept easier to understand and more applicable. The lessons are super helpful, and the topics are not only interesting but also useful for real-world situations. I'm excited to keep learning new skills that I can eventually use in a job setting!",
+        stars: 5
+      },
+      {
+        quote: "The programming lessons are very easy to understand and he gives us advice on internships and many other aspects of engineering. My daughter had no programming experience at all and started from scratch, but since Koki was very good at teaching, she was able to understand it in her college class. My son has also increased his programming knowledge and is learning a lot from the activities as well.",
         stars: 5
       },
       {
@@ -258,8 +276,22 @@ export const new_testimonials = [
       },
       {
         quote:
+          "The lesson slides as well as the actual programming activities were very useful. Through the activities, I was able to gain tips and skills that I would not have otherwise known.",
+        stars: 5
+      },
+      {
+        quote:
           "I learn a lot and it doesn't take up much time. The lessons are fun and I'm really glad I learned because I can use what I learned.",
         stars: 4
+      },
+      {
+        quote:
+          "The lessons were very fun and engaging, and the content was very concise and easy to understand! These aspects really helped me in my courses at school.",
+        stars: 5
+      },
+      {
+        quote: "The lesson provided excellent content with clear slides and videos, offering a great opportunity to learn programming, and I’m excited to complete the project—thank you for the valuable lesson!",
+        stars: 5
       }
     ]
   }
