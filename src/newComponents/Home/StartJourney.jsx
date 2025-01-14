@@ -33,21 +33,13 @@ mt-6 md:mt-8 md:py-4 md:px-6
 bg-main-yellow inline-block hocus:bg-main-backgroundYellow rounded-full`;
 
 var currInfo = startJourneyInfo[0];
+var currNavPath = "/jp/";
 export default function StartJourneyHero(props) {
   if(props.language === "ENG"){
     currInfo = startJourneyInfo[1];
+    currNavPath = "/";
   }
   const navigate = useNavigate();
-  const trialLessonFormJap = [ 
-    <PrimaryButton as="a" onClick={() => navigate('/trialLesson')}>
-      {currInfo.Button}
-    </PrimaryButton>
-  ];
-  const trialLessonFormEng = [ 
-    <PrimaryButton as="a" onClick={() => navigate('/eng/trialLesson')}>
-      {currInfo.Button}
-    </PrimaryButton>
-  ];
 
   return (
     <PrimaryBackgroundContainer>
@@ -57,7 +49,9 @@ export default function StartJourneyHero(props) {
             <Heading>{currInfo.Heading}</Heading>
             <Description>{currInfo.Description1}</Description>
             <Description tw="text-main-yellow tracking-widest">{currInfo.Description2}</Description>
-            {props.language === "JP" ? trialLessonFormJap : trialLessonFormEng}
+            <PrimaryButton as="a" onClick={() => navigate(currNavPath + 'trialLesson')}>
+              {currInfo.Button}
+            </PrimaryButton>
           </TextColumn>
         </Row>
       </Container>

@@ -30,39 +30,27 @@ const NavLink = tw.a`
 `;
 
 var currInfo = contactForm[0];
+var currNavPath = "/jp/";
 export default function ContactForm(props) {
   if(props.language === "ENG"){
     currInfo = contactForm[1];
+    currNavPath = "/";
   }
   const navigate = useNavigate();
-
-  const contactFormLinksJap = [ 
-    <InternalNavBar>
-      <NavLink onClick={() => navigate('/trialLesson')}>
-        {currInfo.nav[0]}
-      </NavLink>
-      <NavLink onClick={() => navigate('/contact')}>
-        {currInfo.nav[1]}
-      </NavLink>
-    </InternalNavBar>
-  ];
-  const contactFormLinksEng = [ 
-    <InternalNavBar>
-      <NavLink onClick={() => navigate('/eng/trialLesson')}>
-        {currInfo.nav[0]}
-      </NavLink>
-      <NavLink onClick={() => navigate('/eng/contact')}>
-        {currInfo.nav[1]}
-      </NavLink>
-    </InternalNavBar>
-  ];
 
   return (
     <Container>
       <Heading>{currInfo.heading}</Heading>
       <HorizontalLine />
       <HiddenBr_BreakPoint3 />
-      {props.language === "JP" ? contactFormLinksJap : contactFormLinksEng}
+      <InternalNavBar>
+        <NavLink onClick={() => navigate(currNavPath + 'trialLesson')}>
+          {currInfo.nav[0]}
+        </NavLink>
+        <NavLink onClick={() => navigate(currNavPath + 'contact')}>
+          {currInfo.nav[1]}
+        </NavLink>
+      </InternalNavBar>
     </Container>
   );
 };

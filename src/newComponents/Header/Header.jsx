@@ -75,23 +75,22 @@ export default function Header(props) {
   const navigate = useNavigate();
   let location = useLocation();
 
-  // currPath = (window.location.hash);
   currPath = (location.pathname);
   let pathArr = currPath.split("/");
   pathArr = pathArr.slice(1);
   let currNavPath = "/";
-  let currNavLink = japNav;
-  if(pathArr[0] === "eng"){
+  let currNavLink = engNav;
+  if(pathArr[0] === "jp"){
     pathArr = pathArr.slice(1);
-    currNavPath = "/eng/";
-    currNavLink = engNav;
+    currNavPath = "/jp/";
+    currNavLink = japNav;
   }
   currPath = pathArr.join("/");
 
   const globeLinkJap = (
     <LanguageChangeContainer>
       <LanguageChange onClick={() => {
-          navigate("/eng/" + currPath);
+          navigate("/" + currPath);
           window.location.reload();
         }}>
         <GlobeIcon tw="w-6 h-6" />
@@ -102,7 +101,7 @@ export default function Header(props) {
   const globeLinkEng = (
     <LanguageChangeContainer>
       <LanguageChange onClick={() => {
-          navigate("/" + currPath);
+          navigate("/jp/" + currPath);
           window.location.reload();
         }}>
         <GlobeIcon tw="w-6 h-6" />

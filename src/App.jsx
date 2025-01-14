@@ -23,22 +23,22 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <Routes>
-          <Route exact path="/" element = {<HomePage language = "JP"/>} />
-          <Route exact path="/eng" element = {<HomePage language = "ENG"/>} />
-          <Route path="/whyLearn" element = {<WhyLearnPage language = "JP"/>} />
-          <Route path="/eng/whyLearn" element = {<WhyLearnPage language = "ENG"/>} />
-          <Route path="/aboutMe" element = {<AboutPage language = "JP"/>} />
-          <Route path="/eng/aboutMe" element = {<AboutPage language = "ENG"/>} />
-          <Route path="/service" element = {<ServicesPage language = "JP"/>} />
-          <Route path="/eng/service" element = {<ServicesPage language = "ENG"/>} />
-          <Route path="/faq" element = {<FaqPage language = "JP"/>} />
-          <Route path="/eng/faq" element = {<FaqPage language = "ENG"/>} />
-          <Route path="/feedback" element = {<TestimonialPage language = "JP"/>} />
-          <Route path="/eng/feedback" element = {<TestimonialPage language = "ENG"/>} />
-          <Route path="/trialLesson" element = {<TrialLessonPage language = "JP"/>} />
-          <Route path="/eng/trialLesson" element = {<TrialLessonPage language = "ENG"/>} />
-          <Route path="/contact" element = {<ContactPage language = "JP"/>} />
-          <Route path="/eng/contact" element = {<ContactPage language = "ENG"/>} />
+          <Route exact path="/jp" element = {<HomePage language = "JP"/>} />
+          <Route exact path="/" element = {<HomePage language = "ENG"/>} />
+          <Route path="/jp/whyLearn" element = {<WhyLearnPage language = "JP"/>} />
+          <Route path="/whyLearn" element = {<WhyLearnPage language = "ENG"/>} />
+          <Route path="/jp/aboutMe" element = {<AboutPage language = "JP"/>} />
+          <Route path="/aboutMe" element = {<AboutPage language = "ENG"/>} />
+          <Route path="/jp/service" element = {<ServicesPage language = "JP"/>} />
+          <Route path="/service" element = {<ServicesPage language = "ENG"/>} />
+          <Route path="/jp/faq" element = {<FaqPage language = "JP"/>} />
+          <Route path="/faq" element = {<FaqPage language = "ENG"/>} />
+          <Route path="/jp/feedback" element = {<TestimonialPage language = "JP"/>} />
+          <Route path="/feedback" element = {<TestimonialPage language = "ENG"/>} />
+          <Route path="/jp/trialLesson" element = {<TrialLessonPage language = "JP"/>} />
+          <Route path="/trialLesson" element = {<TrialLessonPage language = "ENG"/>} />
+          <Route path="/jp/contact" element = {<ContactPage language = "JP"/>} />
+          <Route path="/contact" element = {<ContactPage language = "ENG"/>} />
         </Routes>
       </Router>
     </>

@@ -69,11 +69,11 @@ const StarsContainer = styled.div``;
 const StarIcon = tw(StarIconBase)`inline-block w-4 h-4 md:w-6 md:h-6 text-orange-400 fill-current mr-1 last:mr-0`;
 
 var currInfo = new_testimonials[0];
-var currNavPath = "/";
+var currNavPath = "/jp/";
 export default function TestimonialComponent(props) {
   if(props.language === "ENG"){
     currInfo = new_testimonials[1];
-    currNavPath = "/eng/";
+    currNavPath = "/";
   }
   const navigate = useNavigate();
 

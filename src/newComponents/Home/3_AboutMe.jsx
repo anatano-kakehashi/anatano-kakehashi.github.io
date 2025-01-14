@@ -48,11 +48,11 @@ const Offsetbackground = styled.div(props => [
 ]);
 
 var currInfo = home_aboutMe[0];
-var currNavPath = "/";
+var currNavPath = "/jp/";
 export default function AboutMeHero(props) {
   if(props.language === "ENG"){
     currInfo = home_aboutMe[1];
-    currNavPath = "/eng/";
+    currNavPath = "/";
   }
   const navigate = useNavigate();
 

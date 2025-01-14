@@ -39,22 +39,13 @@ text-main-white font-roboto font-extrabold shadow transition duration-300
 bg-main-blue hocus:bg-main-lighterBlue hocus:text-main-white focus:outline-none focus:shadow-outline cursor-pointer`;
 
 var currInfo = home_hero[0];
+var currNavPath = "/jp/";
 export default function Home_Hero(props) {
   if(props.language === "ENG"){
     currInfo = home_hero[1];
+    currNavPath = "/";
   }
   const navigate = useNavigate();
-
-  const trialLessonFormJap = [ 
-    <PrimaryAction as="a" onClick={() => navigate('/trialLesson')}>
-      {currInfo.PrimaryAction}
-    </PrimaryAction>
-  ];
-  const trialLessonFormEng = [ 
-    <PrimaryAction as="a" onClick={() => navigate('/eng/trialLesson')}>
-      {currInfo.PrimaryAction}
-    </PrimaryAction>
-  ];
   
   return (
     <Container tw="md:py-6">
@@ -62,7 +53,9 @@ export default function Home_Hero(props) {
         <Content>
           <Heading>{currInfo.Heading}</Heading>
           <Paragraph tw="pb-2 md:pb-4">{currInfo.Paragraph}</Paragraph>
-          {props.language === "JP" ? trialLessonFormJap : trialLessonFormEng}
+          <PrimaryAction as="a" onClick={() => navigate(currNavPath + 'trialLesson')}>
+            {currInfo.PrimaryAction}
+          </PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>

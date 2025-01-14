@@ -50,64 +50,23 @@ const CopyrightContent = tw.div`max-w-screen-xl mx-auto py-8`;
 const CopyrightText = tw.p`text-center font-extrabold tracking-wider text-xs lg:text-sm text-main-white`;
 
 var currPath = "/";
+var engNav = ["Why Learn", "About Me", "Service", "Feedback", "FAQ", "Contact Us"];
+var japNav = ["学ぶメリット", "私について", "サービス", "ご利用者の声", "FAQ", "お問い合わせ"];
 export default function Footer(props) {
   const navigate = useNavigate();
-
   let location = useLocation();
-  currPath = (location.pathname);
 
-  // currPath = window.location.hash;
+  currPath = (location.pathname);
   let pathArr = currPath.split("/");
   pathArr = pathArr.slice(1);
-  if(pathArr[0] === "eng"){
+  let currNavPath = "/";
+  let currNavLink = engNav;
+  if(pathArr[0] === "jp"){
     pathArr = pathArr.slice(1);
+    currNavPath = "/jp/";
+    currNavLink = japNav;
   }
   currPath = pathArr.join("/");
-
-  const tbasLogoLinkJap = (
-    <LogoLink onClick={() => navigate("/")}>
-      <img src={logo} alt="logo" />
-      <LogoText>
-        <LogoRedText>
-          ANATANO
-        </LogoRedText>
-        <br/>
-        KAKEHASHI
-      </LogoText>
-    </LogoLink>
-  );
-
-  const tbasLogoLinkEng = (
-    <LogoLink onClick={() => navigate("/eng/")}>
-      <img src={logo} alt="logo" />
-      <LogoText>
-        <LogoRedText>
-          ANATANO
-        </LogoRedText>
-        <br/>
-        KAKEHASHI
-      </LogoText>
-    </LogoLink>
-  );
-
-  const tbasNavLinksJap = [
-    <NavLinks key = {1}>
-      <NavLink onClick={() => navigate("/whyLearn")}>何故プログラミング</NavLink>
-      <NavLink onClick={() => navigate("/aboutMe")}>私について</NavLink>
-      <NavLink onClick={() => navigate("/service")}>サービス</NavLink>
-      <NavLink onClick={() => navigate("/feedback")}>ご利用者の声</NavLink>
-      <NavLink onClick={() => navigate("/faq")}>FAQ</NavLink>
-    </NavLinks>
-  ];
-  const tbasNavLinksEng = [
-    <NavLinks key = {1}>
-      <NavLink onClick={() => navigate("/eng/whyLearn")}>Why Learn</NavLink>
-      <NavLink onClick={() => navigate("/eng/aboutMe")}>About Me</NavLink>
-      <NavLink onClick={() => navigate("/eng/service")}>Service</NavLink>
-      <NavLink onClick={() => navigate("/eng/feedback")}>Feedback</NavLink>
-      <NavLink onClick={() => navigate("/eng/faq")}>FAQ</NavLink>
-    </NavLinks>
-  ];
 
   return (
     <>
@@ -115,9 +74,25 @@ export default function Footer(props) {
         <Content>
           <Row>
             <LogoContainer>
-              {props.language === "JP" ? tbasLogoLinkJap : tbasLogoLinkEng}
+              <LogoLink onClick={() => navigate(currNavPath)}>
+                <img src={logo} alt="logo" />
+                <LogoText>
+                  <LogoRedText>
+                    ANATANO
+                  </LogoRedText>
+                  <br/>
+                  KAKEHASHI
+                </LogoText>
+              </LogoLink>
             </LogoContainer>
-            {props.language === "JP" ? tbasNavLinksJap : tbasNavLinksEng}
+            <NavLinks key = {1}>
+              <NavLink onClick={() => navigate(currNavPath + "whyLearn")}>{currNavLink[0]}</NavLink>
+              <NavLink onClick={() => navigate(currNavPath + "aboutMe")}>{currNavLink[1]}</NavLink>
+              <NavLink onClick={() => navigate(currNavPath + "service")}>{currNavLink[2]}</NavLink>
+              <NavLink onClick={() => navigate(currNavPath + "feedback")}>{currNavLink[3]}</NavLink>
+              <NavLink onClick={() => navigate(currNavPath + "faq")}>{currNavLink[4]}</NavLink>
+              <NavLink onClick={() => navigate(currNavPath + "contact")}>{currNavLink[5]}</NavLink>
+            </NavLinks>
             <SocialLinksContainer>
               <SocialLink href="mailto:anatano.koki@gmail.com">
                 <MailIcon />
