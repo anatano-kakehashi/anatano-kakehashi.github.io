@@ -1,22 +1,29 @@
 {
   "files": {
     "main.css": "/static/css/main.5a74e866.css",
-    "main.js": "/static/js/main.052ee5c6.js",
+    "main.js": "/static/js/main.4a94287e.js",
     "static/media/prof.png": "/static/media/prof.f6b0f9cef1ee40248edf.png",
+    "static/media/Daiki.png": "/static/media/Daiki.c0060806c38a8ec8c7ab.png",
     "static/media/prof2.png": "/static/media/prof2.a1ec0ab1a570adcf80f1.png",
     "static/media/ms.jpeg": "/static/media/ms.58d0114b2446bf0d920a.jpeg",
     "static/media/home_profile.png": "/static/media/home_profile.a4294df8c55f8284d22c.png",
+    "static/media/aboutUs.png": "/static/media/aboutUs.f91c4a489baa9e5d2f86.png",
+    "static/media/prof.jpg": "/static/media/prof.64138d64c336e6d21950.jpg",
     "static/media/japan.jpeg": "/static/media/japan.6e4d40819dbf41dfa2a3.jpeg",
     "static/media/invoca.jpeg": "/static/media/invoca.45f617a58beda7f0ed6c.jpeg",
     "static/media/background.png": "/static/media/background.0e2ba5e268fc90ebabcf.png",
+    "static/media/UCI.png": "/static/media/UCI.f07db1062fc5c0400d68.png",
     "static/media/ucsb-campus.jpeg": "/static/media/ucsb-campus.93718d6f29f45b11647d.jpeg",
     "static/media/ng.jpeg": "/static/media/ng.3788665a84dde6016c84.jpeg",
     "static/media/Kazoku.jpeg": "/static/media/Kazoku.f5c7e66312859ff698dd.jpeg",
+    "static/media/CTC.jpeg": "/static/media/CTC.6439c0508704a8a0a01e.jpeg",
     "static/media/skill2.png": "/static/media/skill2.c3d5f08e127f25558b1d.png",
     "static/media/skill1.png": "/static/media/skill1.b942ea4384ae54dd9d8f.png",
     "static/media/skill3.png": "/static/media/skill3.fd552a774dfabdf014ee.png",
     "static/media/skill4.png": "/static/media/skill4.66c7f24ae4a72bb62a65.png",
+    "static/media/IIJ.jpeg": "/static/media/IIJ.3ab3768f3bdf5bf9af8d.jpeg",
     "static/media/minecraft.png": "/static/media/minecraft.18909a1ff7615b12d3d5.png",
+    "static/media/aITC.jpeg": "/static/media/aITC.c3f464112d461ee9c619.jpeg",
     "static/media/github.png": "/static/media/github.8b7beed61d9bf9bba4a3.png",
     "static/media/python.png": "/static/media/python.517a703113b39b71db9f.png",
     "static/media/code.png": "/static/media/code.0be83daa2fa88b150681.png",
@@ -39,10 +46,10 @@
     "static/media/cloud.svg": "/static/media/cloud.6320a388771887c1a0cb0b6cb6bfa0ab.svg",
     "static/media/chevron-down.svg": "/static/media/chevron-down.c3e123cf78bc368a192f3e2dee97daba.svg",
     "main.5a74e866.css.map": "/static/css/main.5a74e866.css.map",
-    "main.052ee5c6.js.map": "/static/js/main.052ee5c6.js.map"
+    "main.4a94287e.js.map": "/static/js/main.4a94287e.js.map"
   },
   "entrypoints": [
     "static/css/main.5a74e866.css",
-    "static/js/main.052ee5c6.js"
+    "static/js/main.4a94287e.js"
   ]
 }
