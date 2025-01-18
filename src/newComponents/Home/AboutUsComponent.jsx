@@ -26,7 +26,7 @@ const Row = tw.div`flex flex-col md:flex-row justify-between items-center mx-aut
 
 const TextColumn = styled.div` ${tw`
 px-6 lg:px-8 py-12 lg:py-40 lg:ml-8`}`;
-const ImageColumn = tw.div`relative my-8 md:ml-12 md:mt-0 mx-auto`;
+const ImageColumn = tw.div`relative mt-16 lg:my-8 md:ml-12 md:mt-0 mx-auto`;
 
 const ImageContainer = tw.div`relative z-40`;
 
@@ -35,8 +35,8 @@ const Description = tw(MainParagraphTemplate)`mt-4 text-main-white font-light tr
 const PrimaryButton = tw(PrimaryButtonBase)`mt-4 md:mt-8 inline-block bg-main-blue tracking-wide text-center md:px-8 md:py-4 rounded-full hocus:bg-main-lighterBlue`;
 
 const Image_Background = styled.div`background-image: url("https://images.unsplash.com/photo-1618339279706-df3b511d7742?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  ${tw`absolute inset-0 bg-cover bg-center m-auto lg:mr-8
-  w-[300px] h-[350px] lg:w-[400px] lg:h-[480px]
+  ${tw`absolute inset-0 bg-cover bg-center m-auto mr-6 lg:mr-8
+  w-[250px] h-[300px] lg:w-[400px] lg:h-[480px]
   rounded`}`;
 
 const Image = styled.div(props => [
