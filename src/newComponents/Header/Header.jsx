@@ -83,15 +83,15 @@ const DropdownParentToggleIcon = styled(motion.span)`
   }
 `;
 const DropdownLinkContainer = tw(motion.div)`hidden absolute 
-left-0 z-40 font-normal mt-4 text-gray-300 bg-main-white text-main-blue lg:w-[12.5rem] xl:w-[13.5rem]`;
+left-0 z-40 font-normal mt-4 text-gray-300 bg-main-white text-main-blue lg:w-[7.5rem] xl:w-[8.5rem]`;
 const DropdownLink = tw(NavLink)`block lg:mx-0 px-4 py-2 w-full`;
 const DropdownLinks = tw.div`flex flex-wrap cursor-pointer`;
 
 var currPath = "/";
 var engNav = ["Why Learn", "About Us", "Service", "Feedback", "FAQ", "Contact Us"];
 var japNav = ["学ぶメリット", "私達について", "サービス", "ご利用者の声", "FAQ", "お問い合わせ"];
-var teachersEngNav = ["Tutors", "About Koki Tutor", "About Daiki Tutor"];
-var teachersJapNav = ["講師紹介", "コウキ講師について", "ダイキ講師について"];
+var teachersEngNav = ["Tutors", "Koki Tutor", "Daiki Tutor"];
+var teachersJapNav = ["講師紹介", "コウキ講師", "ダイキ講師"];
 
 export default function Header(props) {
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
