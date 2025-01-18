@@ -100,15 +100,49 @@ export const home_aboutMe = [
     Heading: "あなたの講師",
     SubHeading: (<>未来のプログラマーの皆さん、 <HiddenBr /><HiddenBrLgXl />こんにちは！</>),
     Description: "私の名前はコウキです！現在マイクロソフトでソフトウェアエンジニアとして働いています。あなたの講師としてだけでなく、メンター・友人のような存在になれるよう心掛けております。",
-    Button: "私について"
+    Button: "私について",
+    Teachers: [
+      {
+        Name: "コウキ講師",
+        Blurb: "現在マイクロソフトでソフトウェアエンジニアとして働いています。あなたの講師としてだけでなく、メンター・頼れる存在になれるよう心掛けております！"
+      },
+      {
+        Name: "ダイキ講師",
+        Blurb: "現在UC Irvineでコンピューターサイエンスを専攻している大学3年生です。これまで経験してきたことを基に、これから学び始める君の人生をより良いものにするための最高の授業を提供して行きたいと思ってます。"
+      }
+    ]
   },
   {
     Heading: "Your Teacher",
     SubHeading: "Hi there, future programmers! ",
     Description: "My name is Koki, and I'm currently working as a Software Engineer at Microsoft! I strive to not just be your tutor, but to also become a mentor-like figure and friend.",
-    Button: "Get To Know Me"
+    Button: "Get To Know Me",
+    Teachers: [
+      {
+        Name: "Koki Teacher",
+        Blurb: "My name is Koki, and I'm currently working as a Software Engineer at Microsoft. I strive to not just be your tutor, but to also become a mentor-like figure and friend!"
+      },
+      {
+        Name: "Daiki Teacher",
+        Blurb: "My name is Daiki, and I am currently a third year Computer Science and Engineering major　at UC Irvine. Based on the　experiences I’ve had so far, I want to offer you the best lessons to help　make your life, starting from what you’re about to learn, even better."
+      }
+    ]
   }
 ];
+
+export const new_home_aboutMe = [
+  {
+    SubHeading: (<>未来のプログラマーの皆さん、 <HiddenBr /><HiddenBrLgXl />こんにちは！👋</>),
+    Description: "私たち講師陣は生徒1人1人に合ったサポートをご提供し、大学や仕事・インターンの対策もサポートしてます！あなたの講師としてだけでなく、メンター・友人のような存在になれるよう心掛けております。",
+    Button: "私達について"
+  },
+  {
+    SubHeading: "Hi there, future programmers!👋",
+    Description: "Our instructors provide support tailored to each student and offer assistance with university and industry preparation! We strive to not just be your tutor, but to also become a mentor-like figure and friend.",
+    Button: "Get To Know Us"
+  }
+];
+
 
 export const startJourneyInfo = [
   {
@@ -456,9 +490,32 @@ export const whyCS_WhyDive = [
 
 // about me related information
 
-export const aboutMe_IntroHero = [
+export const aboutUs_IntroHero = [
   {
-    Heading:"私について",
+    Heading:"私達について",
+    SubHeading:(<>未来のプログラマーの<HiddenBrLg />皆さん、<HiddenBr/><HiddenBrXl />こんにちは！ 👋</>),
+    Paragraph:[
+      "コンピューター","サイエンス",
+      "の素晴らしさを教える、",
+      "講師達",
+      "です。"
+    ]
+  },
+  {
+    Heading:"ABOUT US",
+    SubHeading:"Hi there, future programmers! 👋",
+    Paragraph:[
+      "We're here to ",
+      "support your journey ",
+      "into the awesome world of ",
+      "Computer Science."
+    ]
+  }
+];
+
+export const aboutKoki_IntroHero = [
+  {
+    Heading:"コウキ講師",
     SubHeading:(<>未来のプログラマーの<HiddenBrLg />皆さん、<HiddenBr/><HiddenBrXl />こんにちは！ 👋</>),
     Paragraph:[
       "コンピューター","サイエンス",
@@ -468,7 +525,7 @@ export const aboutMe_IntroHero = [
     ]
   },
   {
-    Heading:"ABOUT ME",
+    Heading:"ABOUT KOKI",
     SubHeading:"Hi there, future programmers! 👋",
     Paragraph:[
       "I'm ",
@@ -479,9 +536,32 @@ export const aboutMe_IntroHero = [
   }
 ];
 
-export const aboutMe_JourneyHero = [
+export const aboutDaiki_IntroHero = [
   {
-    Heading:"私の経歴",
+    Heading:"ダイキ講師",
+    SubHeading:(<>未来のプログラマーの<HiddenBrLg />皆さん、<HiddenBr/><HiddenBrXl />こんにちは！ 👋</>),
+    Paragraph:[
+      "コンピューター","サイエンス",
+      "の素晴らしさを教える、",
+      "ダイキ",
+      "です。"
+    ]
+  },
+  {
+    Heading:"ABOUT DAIKI",
+    SubHeading:"Hi there, future programmers! 👋",
+    Paragraph:[
+      "I'm ",
+      "Daiki, ",
+      "your guide into the awesome world of ",
+      "Computer Science."
+    ]
+  }
+];
+
+export const koki_aboutMe_JourneyHero = [
+  {
+    Heading:"コウキ講師の経歴",
     Paragraph:"現在マイクロソフトでソフトウェア・エンジニアとして働いていますが、ほんの5年前まで私はコンピューターサイエンスが何なのかを全く知りませんでした。そんなゼロからのスタートでしたが、色んな経験を積み学ぶ事が出来ました。",
     Description1: "様々な授業、インターンシップ、プロジェクトを通じて、ウェブサイトの作り方やAI/MLの学習方法など、素晴らしい技術を学んで来ました。加えて、私はプログラミング以外の重要なライフスキルも学びました：チームワーク、コミュニケーション、問題解決、など。これまで経験した事、これから学ぶ事を全部取り入れて君に最高の授業を提供して行きたいです。",
     Description2: "だから、もしあなたがコンピューターサイエンスを怖いと感じたり、学ぶ準備が出来てないと感じたりしているなら、ただ思い出してほしい：私もたった5年前はあなたと同じく怖く感じてました。あなたの旅はまだ始まったばかりで、私はあなたの事を全力でサポートします。絶対楽しい未来が待っているよ！",
@@ -519,7 +599,7 @@ export const aboutMe_JourneyHero = [
     ]
   },
   {
-    Heading:"My Journey",
+    Heading:"Koki Tutor's Journey",
     Paragraph:"I'm working as a Software Engineer at Microsoft right now (pretty wild, huh?), but just five years ago, I was in your shoes, not knowing a thing about Computer Science. I started from scratch, and it's been an amazing adventure. Below, you can see some of my relevant experiences I have in the realm of Computer Science.",
     Description1: "I learned some amazing technical skills like how to create a website or how to train an AI/ML model through various projects, coursework, and industry experience. Throughout this journey, though, I also learned important life skills that helped me get to where I am today. Life's not just about coding, right? It's also about things like teamwork, communication, and problem-solving, and I've got some great stories to share about that as well.",
     Description2: "So, if you're feeling intimidated by Computer Science or feel like you aren't prepared to learn, don't worry. Remember that I started from scratch too and look where I am now. Your journey is just beginning, and it's going to be a fantastic ride!",
@@ -558,85 +638,157 @@ export const aboutMe_JourneyHero = [
   }
 ]
 
-export const aboutMe_TeachHero = [
+export const daiki_aboutMe_JourneyHero = [
   {
-    Heading:"私が教える事",
+    Heading:"ダイキ講師の経歴",
+    Paragraph:"現在UC Irvineでコンピューターサイエンスを専攻している大学3年生です。中学と高校でプログラミングを一応習ったことがあるのと、数学が得意だったのでなんとなく大学の専攻として選びましたが、ほんの1年前まではプログラミングが上手とは全く言えないようなレベルでした。プログラミングはやったことはあるものの、自分でコードをプロジェクトを作れと言われても、どこから始めればいいのか全くわかりませんでした。そんな私でしたが、様々な経験を経て学ぶことができました。",
+    Description1: "様々な授業やインターンシップを通じて、ウェブサイトの作り方だったり多くのプログラミング言語を使ったプロジェクトの作り方を学んで来ました。プログラミング意外に、将来必須となってくるライフスキルも身につきました：チームワーク、リーダーシップ、コミュニケーション、問題解決など。これまで経験してきたことを基に、これから学び始める君の人生をより良いものにするための最高の授業を提供して行きたいと思ってます。",
+    Description2: "だから、もしあなたがコンピューターサイエンスで挫折しそうな時があったり、思い悩むことがあったらこれを思い出して欲しい：ほんの1年前までは私だって将来の方向性がなく、なんとなくコンピューターサイエンスを学んでいて、同じく挫折しそうな時も何回もありました。挫折や思い悩むことをはいっぱいあるかもしれないけど、少しずつ周りを頼って前に進めば最後は思い通りに変われるよ！私は全てをつくしてあなたをサポートするので、どんどん頼ってください！一緒に頑張って、楽しい未来を切り開こう！",
+    Journey:[
+      {
+        SubHeading: "UC Irvine",
+        Date: "２０２２秋",
+        Description: (<>なんとなくコンピューターサイエンスを<br />専攻としたままUC Irvineに入学</>),
+      },
+      {
+        SubHeading: "aiTWorks",
+        Date: "２０２３夏",
+        Description: "ビバリーヒルズにある日系企業でウェブ開発インターン"
+      },
+      {
+        SubHeading: "Internet Initiative Japan (IIJ)",
+        Date: "２０２４夏",
+        Description: (<>日本の大手IT企業で<br/>IT・グローバルマーケティングインターン</>)
+      },
+      {
+        SubHeading: "UCI Commit the Change",
+        Date: "２０２４秋",
+        Description: (<>200人以上の応募者のうちの40人に選ばれ、<br/>名門ウェブ開発クラブCTCに入部</>)
+      }
+    ]
+  },
+  {
+    Heading:"Daiki Tutor's Journey",
+    Paragraph:"I am currently a third year Computer Science and Engineering majorat UC Irvine. I chose to study Computer Science because I learned programming slightly during middle and high school but up until a year ago, I was not good at programming at all. Although I had experienceprogramming, I was at a point where I would be unable to code projects on my own without a clue on where to start. However, even someone like me was able to learn a lot through various experiences.",
+    Description1: "Through various classes and internships, I’ve learned how to build websites and create projects using many different programming languages. In addition to programming, I’ve also gained essential life skills that will be important for the future: teamwork, leadership, communication, problem-solving, and more. Based on the experiences I’ve had so far, I want to offer you the best lessons to help make your life, starting from what you’re about to learn, even better.",
+    Description2: "So, if you ever feel like you're about to give up on computer science or find yourself struggling, I want you to remember this: just one year ago, I too was uncertain about my future and was simply learning computer science without a clear direction. There were many times when I felt like giving up as well. There may be many moments of frustration and doubt, but if you rely on those around you and keep moving forward little by little, in the end, you will be able to change things the way you want! I’ll support you with everything I’ve got, so please don’t hesitate to lean on me! Let’s work hard together and create a bright future!",
+    Journey:[
+      {
+        SubHeading: "UC Irvine",
+        Date: "2022 Fall",
+        Description: "Enrolled into UC Irvine as a Computer Science major"
+      },
+      {
+        SubHeading: "aiTWorks",
+        Date: "2023 Summer",
+        Description: "Worked at a Japanese-American company in Beverly Hills as a Web Development intern"
+      },
+      {
+        SubHeading: "Internet Initiative Japan (IIJ)",
+        Date: "2024 Summer",
+        Description: (<>IT/Global Marketing Intern at a <br />Major IT company in Japan</>)
+      },
+      {
+        SubHeading: "UCI CTC",
+        Date: "2024 Fall",
+        Description: (<>Selected as one of 40 people out of 200+ applicants to enroll in CTC 'Commit the Change',<br />a popular Web Development Club at UCI</>)
+      }
+    ]
+  }
+]
+
+export const aboutUs_TeachersHero = [
+  {
+    Heading:"あなたの架け橋の講師",
     SubHeading:[
-      "私は単なる講師ではなく、", 
+      "私達は単なる講師ではなく、", 
       "あなたの",
       "メンター",
       " ・ ",
       "友人",
       "だと思ってください。"
     ],
-    Paragraph:"コンピューターサイエンスをマスターする手助けをするだけでなく、履歴書の書き方や大学進学のためのアドバイスなど、人生の教訓もお伝えします。"
+    Paragraph:"コンピューターサイエンスをマスターする手助けをするだけでなく、履歴書の書き方や大学進学のためのアドバイスなど、人生の教訓もお伝えします。あなたの架け橋の教師についてもっと知りたければ、以下のリンクをクリックしてください！",
+    nav: [
+      "ダイキ講師",
+      "コウキ講師"
+    ]
   },
   {
-    Heading:"What I'll Teach You",
+    Heading:"Tutors at Anatano Kakehashi",
     SubHeading:[
-      "I'm not just your tutor;", 
-      "think of me as your ",
+      "We're not just your tutor;", 
+      "think of us as your ",
       "mentor",
       " and ",
       "friend."
     ],
-    Paragraph:"I'll not only help you master Computer Science but also share life lessons like how to create a resume or give you valuable advice for college and beyond."
+    Paragraph:"We'll not only help you master Computer Science but also share life lessons like how to create a resume or give you valuable advice for college and beyond. Learn more about the tutors at Anatano Kakehashi by clicking the below links!",
+    nav: [
+      "Daiki Tutor",
+      "Koki Tutor"
+    ]
   }
 ];
 
-export const aboutMe_WhyMeHero = [
+export const aboutUs_WhyUsHero = [
   {
-    Heading:"私と学ぶべき理由？",
-    SubHeading1:"共感できるエンジニア",
+    Heading:"私達と学ぶべき理由は？",
+    SubHeading1:"共感できるエンジニア学生経験",
     Paragraph1:(
     <>
-      大学受験のとき、私は気まぐれで「コンピューター・エンジニア」を専攻として選びました。理系の授業は得意でしたし、コンピューターは将来役に立つだろうと言う甘い考えでUCSBに入学しました。その当時、僕にはプログラミングの経験が全く無かったのですが、他の生徒もきっと同じだろうと思ってました。
+      大学受験の時、僕達は気まぐれで「コンピューターエンジニア」を専攻として選びました。なんとなく理系の授業は得意だったし、コンピューターエンジニアなら将来儲かるし役に立つだろうと言う甘い考えで大学に入学しました。その当時、僕らはプログラミング経験がほとんどなく、他の生徒もきっと同じだろうと思ってました。
       <br/><br/>
-      しかし、僕とは対照的にほとんどの生徒が既にプログラミングを学んでいて、将来エンジニアになりたいと言う強い思いを抱いていました。なぜ皆はこんなにも多くのことを知っているのだろう？なぜ皆はエンジニアを目指そうと思ったのだろう？その答えは意外と簡単で、彼らにはアドバイスを貰える人々が身近にいたからでした。自分の家族だったり友達の両親など既にエンジニアになっている人々を知っていました。だからこそエンジニアは何をしていて、どうしたら彼らもエンジニアになれるかを知っていたからです。
+      しかし、実際はその真逆でした。僕たちとは対照的に既にほとんどの生徒が何年もプログラミングを学んでいて、将来エンジニアになるための準備を着々と進めていました。その時、僕らはこう思いました。
+      <br/>
+      「なんで皆はもうこんなにエンジニアのことを知っているんだろう？」
+      「なんで皆はエンジニアを目指そうと思ったんだろう？」
+      <br/>
+      その答えは意外に簡単でした。彼らにはもうアドバイスをくれる人々が身近にいたからです。彼らの家族や友人の両親の中にエンジニアがいて、彼らはそのエンジニアからエンジニアの基礎やどうしたらエンジニアになれるかを教えてもらっていたんです。
+      僕たちの親族や友達の両親を含めた輪の中にはエンジニアが一人もいなかったので、僕たちには導いてくれる人がいませんでした。そのため、どうすればエンジニアになれるかを見つけるために時間をいっぱい費やしてしまいました。
       <br/><br/>
-      私の親族内ではこの分野を探求したのは自分が初めてだったので、私には導いてくれる人が周りに居ませんでした。だからこそ、私はあなたの力になりたいのです。あなたがいつでも頼れる、何でも聞けるメンターとなり一緒に励み、あなたが素晴らしいソフトウェア・エンジニアになる手助けが出来ればと願っています。
+      そんな苦労を繰り返さないために、僕たちはあなたの力になりたいんです。あなたがいつでも頼れる、友達のようになんでも聞ける「メンター」となり、一緒に励みながらあなたが素晴らしいソフトウェア・エンジニアになるための手助けを出来ればいいと思っています。
     </>),
     SubHeading2:"熱心なサポーター",
     Paragraph2:(
       <>
-        日系一世として、私はアメリカで成長して行く中、多くの葛藤や障害に直面し、圧倒されそうになることがよくありました。そのような時期に、ある素晴らしい英語チューターと出会い、私の状況は完全に好転しました。彼の思いやりと多大なサポートによって、英語を楽しく学ぶ事ができるようになりました。<br/><br/>
-        彼のおかげで、学校での成績が良くなっただけでなく、色んな文化にも触れて、素晴らしい友達もできました。この経験以来、私は教えること、そして生徒の人生に良い影響を与えることを心掛けています。私が学んだことを分かち合い、皆さんの成功の手助けをしたいです！
+        日系一世として、僕たちはアメリカで育っていく中、多くの葛藤や困難に直面し、何もかも嫌になってしまうことがよくありました。日本語しか話さない家庭で育ったので、特に英語能力を上達させるのは僕たちにとって非常に厳しいチャレンジでした。
+        そんな時に、ある素晴らしい英語の家庭教師に出会い、僕たちの英語に対して抱いていた嫌悪感は一変しました。彼の思いやりと多大なサポートや励ましによって、あれほど嫌いだった英語を楽しく学ぶことができるようになりました。
+        <br/><br/>
+        彼のおかげで、学校での成績良くなっただけでなく、簡単にアメリカの友達を作るためのコミュニケーションスキルも身につきました。この経験をしてから僕たちは生徒にたくさん事を教えることで生徒達の人生に良い影響を与えることを心掛けています。僕たちがこれまで学んできた事を共有し、皆さんの成功を導く手助けをしたいです！
       </>)
   },
   {
-    Heading:"Why Me?",
-    SubHeading1:"Relatable Engineer",
+    Heading:"Why Choose Us?",
+    SubHeading1:"Relatable Engineering Students",
     Paragraph1:(
     <>
-      When I was applying for college, I chose 'Computer Engineering' on a whim because I thought it sounded interesting and I had a strong STEM background. But here's the thing - I was the first in my family to explore this field, and I didn't have anyone to guide me. So, when I started at UCSB, I had absolutely no programming experience.  
+      When we were applying for college, we both did not have a sense of direction in what we wanted to do with our lives. We both chose “Computer Engineering” as our majors on a whim because we thought it sounded interesting, was said to lead to a high-paying job, and we both had a strong STEM background. However, we both did not have much programming experience going into college. We both thought maybe others were in the same boat, but as we got to know our peers more, we started realizing most of them had years of programming experience already. It made us wonder, why did they know so much already?
       <br/><br/>
-      I thought maybe others were in the same boat, but as I got to know my peers, I realized most of them already had some experience. It made me wonder, why did they know so much already? 
-      <br/><br/>
-      The answer was simple - they had someone to turn to for help, someone who knew about Software Engineering. I didn't have that advantage. 
-      That's why I want to be your tutor - I want to be that mentor you can always rely on, the one you can ask any question, and together, we'll work hard to prepare you to become an awesome Software Engineer.
+      The answer was simple – they had a mentor: someone they could turn to for help any time, someone who knew about Software Engineering. We unfortunately did not have that advantage. That is why we want to be your tutor – we want to be that mentor you can always rely on, openly ask questions to and guide you throughout your whole journey. Together, we will work hard to prepare you to become an awesome Software Engineer. 
     </>),
-    SubHeading2:"Eager and Willing Helper",
+    SubHeading2:"Passionate and Willing Helper",
     Paragraph2:(
       <>
-        As a first generation Japanese-American, I faced tons of struggles and hurdles growing up that often left me feeling overwhelmed. During such difficult times, I met this incredible English tutor who completely turned things around for me. Through his compassion and tremendous support, he not only changed my outlook on English but helped me believe in myself. 
+        As first generation Japanese-Americans, we faced tons of struggles and hurdles growing up that left us overwhelmed. Becoming fluent at English was one of the biggest challenges we faced growing up since the Japanese language was so deeply embedded within your lives. During such a struggle, we met this incredible English tutor who completely changed our perspective on learning. Through his compassion, tremendous support and guidance, he not only changed our discomfort with learning English but also helped us believe in ourselves.
         <br/><br/>
-        Thanks to him, I not only started doing great in school but also made some awesome American friends. Ever since that experience, I've been super passionate about teaching and making a positive impact on students' lives. I'd love to share what I've learned and help you succeed too!
+        Thanks to his efforts, we not only started to do great in school but also gained the ability to make American friends with ease. Ever since then, we have been super passionate about teaching and making a positive impact on students’ lives. We’d love to share what we’ve learned to help you succeed too!
       </>)
   }
 ];
 
-export const aboutMe_MyGoalHero = [
+export const aboutUs_OurGoalHero = [
   {
-    Heading:"私の目標",
+    Heading:"私達の目標",
     Paragraph:[
-      "私の主な目標？ソフトウェア・エンジニアリングのエキサイティングな世界、大学生活、そしてあなたの輝かしい未来に備えることです。一緒に学び、成長し、そして楽しみましょう！ ",
+      "ソフトウェア・エンジニアの楽しく・興味深い世界、大学生活、そしてあなたの輝かしい未来に備えることです。一緒に学び、成長し、そして楽しみましょう！ ",
       "一緒にこの素晴らしい旅に出ましょう！🚀"
     ]
   },
   {
-    Heading:"My Goal",
+    Heading:"Our Goal",
     Paragraph:[
-      "My main goal? To prepare you for the exciting world of software engineering, university life, and your bright future. Together, we'll learn, grow, and have a blast doing it! ",
+      "To prepare you for the exciting world of software engineering, university life, and your bright future. Together, we'll learn, grow, and have a blast doing it! ",
       "Let's embark on this incredible journey together! 🚀"
     ]
   }

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 /* ========= importing assets ============ */
 import {
-  MainHeading as MainHeadingTemplate,
+  MainHeading2 as MainHeadingTemplate,
   LargerMainParagraph as LargerMainParagraphTemplate,
   MainParagraph as MainParagraphTemplate,
   PrimaryButton as PrimaryButtonBase,

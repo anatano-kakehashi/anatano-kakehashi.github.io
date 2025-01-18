@@ -45,13 +45,13 @@ const SocialLink = styled.a`
     ${tw`w-5 h-5`}
   }
 `;
-const CopyrightContainer = tw(ContainerBase)`bg-main-lighterBlue text-main-black -mx-8`
+const CopyrightContainer = tw(ContainerBase)`bg-main-lighterBlue -mx-8`
 const CopyrightContent = tw.div`max-w-screen-xl mx-auto py-8`;
-const CopyrightText = tw.p`text-center font-extrabold tracking-wider text-xs lg:text-sm text-main-white`;
+const CopyrightText = tw.p`text-center font-medium tracking-wider text-xs lg:text-sm text-main-white`;
 
 var currPath = "/";
-var engNav = ["Why Learn", "About Me", "Service", "Feedback", "FAQ", "Contact Us"];
-var japNav = ["学ぶメリット", "私について", "サービス", "ご利用者の声", "FAQ", "お問い合わせ"];
+var engNav = ["Why Learn", "About Us", "Service", "Feedback", "FAQ", "Contact Us"];
+var japNav = ["学ぶメリット", "私達について", "サービス", "ご利用者の声", "FAQ", "お問い合わせ"];
 export default function Footer(props) {
   const navigate = useNavigate();
   let location = useLocation();
@@ -87,7 +87,7 @@ export default function Footer(props) {
             </LogoContainer>
             <NavLinks key = {1}>
               <NavLink onClick={() => navigate(currNavPath + "whyLearn")}>{currNavLink[0]}</NavLink>
-              <NavLink onClick={() => navigate(currNavPath + "aboutMe")}>{currNavLink[1]}</NavLink>
+              <NavLink onClick={() => navigate(currNavPath + "aboutUs")}>{currNavLink[1]}</NavLink>
               <NavLink onClick={() => navigate(currNavPath + "service")}>{currNavLink[2]}</NavLink>
               <NavLink onClick={() => navigate(currNavPath + "feedback")}>{currNavLink[3]}</NavLink>
               <NavLink onClick={() => navigate(currNavPath + "faq")}>{currNavLink[4]}</NavLink>
