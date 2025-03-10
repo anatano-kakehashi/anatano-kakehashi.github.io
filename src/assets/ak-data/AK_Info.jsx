@@ -23,7 +23,8 @@ export const home_hero = [
           あなたの頼れる先輩プログラマーとして、皆にコンピューターサイエンスを教え、サポートする事に全力を注いでいます。また、プログラミング以外の大学・社会に関する事などもアドバイスします。私と一緒に学び、成長し、プログラミングを楽しむ旅をあなたも始めましょう！
         </>
     ),
-    PrimaryAction:"初回無料レッスンを受けよう！"
+    PrimaryAction:"初回無料レッスンを受けよう！",
+    SecondaryAction:"何を学べるか見てみよう！"
   },
   {
     Heading:(
@@ -38,7 +39,8 @@ export const home_hero = [
         As your go-to coding buddy and attentive mentor, I'm all about helping students understand computer science and supporting their journey navigating through both academia and industry. Get ready for a journey of learning, growing, and having a blast together!
       </>
   ),
-    PrimaryAction:"Schedule a Free Lesson!"
+    PrimaryAction:"Schedule a Free Lesson!",
+    SecondaryAction: "Check a Video to see what you can learn!"
   }
 ];
 

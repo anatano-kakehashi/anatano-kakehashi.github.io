@@ -1,9 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
-
-/* ========= importing assets ============ */
 import {MainHeading as HeadingTitleTemplate, 
     MainParagraph as MainParagraphTemplate,
     PrimaryButton as PrimaryButtonTemplate,
@@ -34,31 +31,32 @@ const PrimaryAction = tw(PrimaryButtonTemplate)`rounded-full px-12 py-5
 text-main-white font-roboto font-extrabold shadow transition duration-300 bg-main-blue 
 hocus:bg-main-lighterBlue hocus:text-main-white focus:outline-none focus:shadow-outline`;
 
-var currInfo = home_hero[0];
-export default function Home_Hero(props) {
-    if(props.language === "ENG"){
-        currInfo = home_hero[1];
-    }
+export default function Hero({ language, toggleVideo }) {
+  let currInfo = home_hero[0];
+  if (language === "ENG") {
+    currInfo = home_hero[1];
+  }
 
-    return (
-        <>
-            <br />
-            <Container>
-                <HeroContainer>
-                    <Content>
-                        <Heading>
-                            {currInfo.Heading}
-                        </Heading>
-                        <Paragraph>
-                            {currInfo.Paragraph}
-                        </Paragraph>
-                        <br />
-                        <PrimaryAction as="a" href={'mailto:anatano.koki@gmail.com'}>
-                            {currInfo.PrimaryAction}
-                        </PrimaryAction>
-                    </Content>
-                </HeroContainer>
-            </Container>
-        </>
-    );
-};
+  return (
+    <Container>
+      <HeroContainer>
+        <Content>
+          <Heading>
+            {currInfo.Heading}
+          </Heading>
+          <Paragraph>
+            {currInfo.Paragraph}
+          </Paragraph>
+          <br />
+          <PrimaryAction as="a" href={'mailto:anatano.koki@gmail.com'}>
+            {currInfo.PrimaryAction}
+          </PrimaryAction>
+          <br />
+          <PrimaryAction as="button" onClick={toggleVideo}>
+            {currInfo.SecondaryAction}
+          </PrimaryAction>
+        </Content>
+      </HeroContainer>
+    </Container>
+  );
+}

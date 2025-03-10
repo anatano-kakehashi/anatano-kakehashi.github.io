@@ -24,6 +24,10 @@ export const SectionDescription = tw.p`mt-4 text-sm md:text-base lg:text-lg xl:t
 
 // Divs
 export const StyledDiv = tw.div`font-display bg-main-lightestBlue min-h-screen text-secondary-500 p-8 overflow-hidden`;
+export const FadeInDiv = tw.div`flex justify-center items-center h-screen w-screen bg-black bg-opacity-25`; // Removed `overflow-hidden`
+
+// iFrame
+export const VideoFrame = tw.iframe`relative w-2/3 h-2/3`;
 
 // Used for formatting the website's text better based on common screen size
 export const HiddenBr = tw.br`block sm:hidden`;
@@ -35,8 +39,6 @@ export const HiddenBrMd = tw.br`hidden md:block`;
 
 // Used for highlighting certain important text
 export const HightlightedText = tw.span`text-primary-500`
-
-
 
 
 // AK related components
